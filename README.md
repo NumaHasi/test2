@@ -2,7 +2,7 @@
 
 ### NumaHasi
 
-hi
+hi,
 
 [mypage](https://numahasi.github.io/test2/)
 
