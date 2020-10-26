@@ -2,8 +2,8 @@
 
 ### NumaHasi
 
-hi,
-yasuda ha homo
+hi
+
 
 [mypage](https://numahasi.github.io/test2/)
 
