@@ -3,6 +3,7 @@
 ### NumaHasi
 
 hi,
+yasuda ha homo
 
 [mypage](https://numahasi.github.io/test2/)
 
