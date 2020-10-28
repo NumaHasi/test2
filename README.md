@@ -2,7 +2,7 @@
 
 ### NumaHasi
 
-hi
+hirotaka
 
 
 [mypage](https://numahasi.github.io/test2/)
