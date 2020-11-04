@@ -17,4 +17,8 @@ markdown.write(f.read() )
 markdown.close()
 f.close()
 
+os.system("git add .")
+
+os.system("git commit -m {}")
+
 os.system("git push")
