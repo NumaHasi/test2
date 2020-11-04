@@ -1,1 +1,1461 @@
-sdf
+<!DOCTYPE html>
+<html lang="ja" ng-app="NetCommonsApp">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>松本 嘉孝 (Yoshitaka Matsumoto) - マイポータル - researchmap</title>
+
+		<link href="/favicon.ico?1563498470" type="image/x-icon" rel="icon"/><link href="/favicon.ico?1563498470" type="image/x-icon" rel="shortcut icon"/><meta name="description" content="researchmap is an information sharing platform for the researchers. 
+researchmap is provided by Japan Science and Technology Agency.
+"/><meta name="keywords" content="researchmap,researcher,research,database,science,Japanese,Japanese researchers,researchers database, research community,academia, academics"/><meta name="robots" content="index,follow"/><meta name="copyright" content="Copyright © 2009-"/><meta name="author" content="Japan Science and Technology Agency"/>
+	<link rel="stylesheet" type="text/css" href="/components/bootstrap/dist/css/bootstrap.min.css?1550073338"/>
+	<link rel="stylesheet" type="text/css" href="/components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css?1488292322"/>
+	<link rel="stylesheet" type="text/css" href="/css/net_commons/style.css?1527666056"/>
+
+	<link rel="stylesheet" type="text/css" href="/css/rm_net_commons/style.css?1590380178"/>
+	<link rel="stylesheet" type="text/css" href="/img/glyphicons/css/glyphicons.css?1563498470"/>
+	<link rel="stylesheet" type="text/css" href="/img/glyphicons-filetypes/css/glyphicons-filetypes.css?1563498460"/>
+	<link rel="stylesheet" type="text/css" href="/img/glyphicons-halflings/css/glyphicons-halflings.css?1563498462"/>
+	<link rel="stylesheet" type="text/css" href="/img/glyphicons-social/css/glyphicons-social.css?1563498463"/>
+<link rel="stylesheet" type="text/css" href="/css/pages/style.css?1527666081"/><link rel="stylesheet" type="text/css" href="/css/boxes/style.css?1527666087"/><link rel="stylesheet" type="text/css" href="/css/curriculum_vitaes/style.css?1590380575"/><link rel="stylesheet" type="text/css" href="/css/myportal_space_header/style.css?1593051273"/><link rel="stylesheet" type="text/css" href="/css/rm_menus/style.css?1545140874"/><link rel="stylesheet" type="text/css" href="/css/related_users/style.css?1583980983"/><link rel="stylesheet" type="text/css" href="/css/frames/style.css?1527666085"/><link rel="stylesheet" type="text/css" href="/css/users/style.css?1559095251"/><link rel="stylesheet" type="text/css" href="/css/user_attributes/style.css?1527666051"/><link rel="stylesheet" type="text/css" href="/css/wysiwyg/style.css?1527666053"/><link rel="stylesheet" type="text/css" href="/css/rm_users/style.css?1559100902"/><link rel="stylesheet" type="text/css" href="/css/user_searches/user_select.css?1550546279"/>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css?1563498470"/>
+	<link rel="stylesheet" type="text/css" href="/theme/RmPage/css/style.css?1572503508"/>
+
+	<link rel="stylesheet" type="text/css" href="/theme/RmPage/css/offcanvas.css?1536933618"/>
+
+	<script type="text/javascript" src="/components/jquery/dist/jquery.min.js?1556745568"></script>
+	<script type="text/javascript" src="/components/bootstrap/dist/js/bootstrap.min.js?1550073338"></script>
+	<script type="text/javascript" src="/components/angular/angular.min.js?1552304448"></script>
+	<script type="text/javascript" src="/components/angular-animate/angular-animate.js?1552304448"></script>
+	<script type="text/javascript" src="/components/angular-bootstrap/ui-bootstrap-tpls.min.js?1485610379"></script>
+	<script type="text/javascript" src="/js/net_commons/base.js?1550533138"></script>
+
+<script>
+NetCommonsApp.constant('NC3_URL', '');
+NetCommonsApp.constant('LOGIN_USER', {"id":null});
+NetCommonsApp.constant('TITLE_ICON_URL', '');
+</script>
+
+
+	<script type="text/javascript" src="/theme/RmPage/js/offcanvas.js?1527665269"></script>
+
+<script type="text/javascript" src="/js/boxes/boxes.js?1527666087"></script><script type="text/javascript" src="/js/curriculum_vitaes/dataset.js?1596598209"></script><script type="text/javascript" src="/js/myportal_space_header/myportal_space_header.js?1527669016"></script><script type="text/javascript" src="/js/rm_menus/rm_menus.js?1572501930"></script><script type="text/javascript" src="/js/coauthors/coauthors.js?1596599785"></script><script type="text/javascript" src="/js/rm_users/users.js?1559100902"></script><script type="text/javascript" src="/js/user_searches/user_select.js?1568267769"></script><script type="text/x-mathjax-config">
+//<![CDATA[
+MathJax.Hub.Config({
+	skipStartupTypeset: true,
+	tex2jax: {
+		inlineMath: [['$','$'], ['\\\\(','\\\\)']],
+		displayMath: [['\\\\[','\\\\]']]
+	},
+	asciimath2jax: {
+		delimiters: [['$','$']]
+	}
+});
+
+//]]>
+</script><script type="text/javascript" src="/components/MathJax/MathJax.js?config=TeX-MML-AM_CHTML"></script><script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+	MathJax.Hub.Queue(['Typeset', MathJax.Hub, 'nc-container']);
+});
+
+//]]>
+</script>	</head>
+
+	<body class="" ng-controller="NetCommons.base">
+		
+		
+
+	<div id="nc-flash-message" class="alert alert-{{flash.class}} alert-dismissable hidden">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+	<div>
+		{{flash.message}}
+	</div>
+</div>
+
+
+	<script type="text/javascript" src="/js/rm_net_commons/angular_repeat_finished.js?1578979776"></script>
+
+<header id="nc-system-header">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container clearfix text-nowrap">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nc-system-header-navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+									<div class="offcanvas-default pull-left">
+						<button type="button" class="offcanvas-toggle" data-toggle="offcanvas" data-target="#nc-offcanvas-left">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+				
+				<a href="/" class="navbar-brand"><img src="/img/logo_small.gif?1563498470" title="researchmap" alt="researchmap" class="img-responsive"/></a>			</div>
+
+			<div id="nc-system-header-navbar" class="navbar-collapse collapse">
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown"><div>
+												<span>
+				日本語			</span>
+					|									<a href="?lang=en">
+				English			</a>
+			</div>
+</li><li><a href="/new_accounts/researcher">新規登録</a></li><li><a href="/auth/login">ログイン</a></li>				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+
+<div id="loading" class="nc-loading" ng-show="sending" ng-cloak>
+	<img src="/img/net_commons/loading.svg?1527666056" alt=""/></div>
+
+		<main id="nc-container" class="container" ng-init="hashChange()">
+			
+<header id="container-header">
+	
+<div class="boxes-1">
+	<div id="box-58">
+<section class="frame panel-none nc-content-list plugin-myportal-space-header">
+		
+	<div class="panel-body block">
+		
+<div class="rm-page-header">
+			<div id="rm-cover-photo">
+				<div class="rm-cover-back"></div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-3 col-xs-2 text-center">
+			<div class="rm-avatar">
+				<img src="/read0088195/avatar.jpg" class="img-responsive" alt="アバター"/>			</div>
+		</div>
+		<div class="col-sm-9 col-xs-10">
+			<h1 class="rm-researcher-name">松本 嘉孝</h1>	<div class="rm-ruby">マツモト ヨシタカ&nbsp;&nbsp;(Yoshitaka Matsumoto)</div>
+			
+<div class="rm-page-header-operation">
+	
+	
+	</div>
+
+			
+<div class="rm-modified text-right">
+	更新日: 08/25	</div>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-default" id="achievements-navi"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#rm-myportal-header-menu"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><div id="rm-myportal-header-menu" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li class="myportal-header-exists-achievment"><a href="/read0088195/research_interests">研究キーワード</a></li><li class="myportal-header-exists-achievment"><a href="/read0088195/research_areas">研究分野</a></li><li class="myportal-header-exists-achievment"><a href="/read0088195/research_experience">経歴</a></li><li class="myportal-header-exists-achievment"><a href="/read0088195/education">学歴</a></li><li class="myportal-header-exists-achievment"><a href="/read0088195/committee_memberships">委員歴</a></li><li class="myportal-header-exists-achievment"><a href="/read0088195/awards">受賞</a></li><li class="myportal-header-exists-achievment"><a href="/read0088195/published_papers">論文</a></li><li class="myportal-header-exists-achievment"><a href="/read0088195/misc">MISC</a></li><li class="myportal-header-exists-achievment"><a href="/read0088195/books_etc">書籍等出版物</a></li><li class="myportal-header-exists-achievment"><a href="/read0088195/presentations">講演・口頭発表等</a></li><li class="myportal-header-exists-achievment"><a href="/read0088195/teaching_experience">担当経験のある科目(授業)</a></li><li class="myportal-header-exists-achievment"><a href="/read0088195/association_memberships">所属学協会</a></li><li class="myportal-header-exists-achievment"><a href="/read0088195/works">Works(作品等)</a></li><li class="myportal-header-exists-achievment"><a href="/read0088195/research_projects">共同研究・競争的資金等の研究課題</a></li></ul></div></nav>	<nav class="navbar navbar-default hidden" id="avatar-edit"><ul class="nav navbar-nav rm-avatar-nav"><li><div class="rm-select-file"><form action="/read0088195/avatar/upload" ng-submit="submit($event)" novalidate="novalidate" id="AvatarViewForm" enctype="multipart/form-data" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/><input type="hidden" name="data[_Token][key]" value="eed9a2ce3491fa65abb7b02f3669085775fbe9e32b2e87acf57c0678af5df0861f8aec3d1eb44adbeeeece794a386210234390c3fe62fa175ead76a216132cf3" id="Token464060943" autocomplete="off"/></div><input type="file" name="data[Avatar][user_avatar]" title="アップロードするファイルを選択してください" class="rm-input-file" accept="image/gif,image/jpeg,image/png" onchange="submit();" id="AvatarUserAvatar"/><input type="hidden" name="data[_AntiArrayAttack][multiFields]" value="" autocomplete="off"/><input type="hidden" name="data[_AntiArrayAttack][unlockFields]" value="" autocomplete="off"/><div style="display:none;"><input type="hidden" name="data[_Token][fields]" value="5292862a1bb365909dae2af11ea3cc5d3d4290cb%3A_AntiArrayAttack.multiFields%7C_AntiArrayAttack.unlockFields" id="TokenFields1083216424" autocomplete="off"/><input type="hidden" name="data[_Token][unlocked]" value="" id="TokenUnlocked1549714335" autocomplete="off"/></div></form></div><button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> アバターの編集</button></li><li><form action="/read0088195/avatar/delete" ng-submit="submit($event)" novalidate="novalidate" id="AvatarDeleteViewForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="DELETE"/><input type="hidden" name="data[_Token][key]" value="eed9a2ce3491fa65abb7b02f3669085775fbe9e32b2e87acf57c0678af5df0861f8aec3d1eb44adbeeeece794a386210234390c3fe62fa175ead76a216132cf3" id="Token533663316" autocomplete="off"/></div><input type="hidden" name="data[UsersIndex][_id]" value="5000020162" id="UsersIndexId"/><input type="hidden" name="data[UsersIndex][_source][upload_id]" value="46218" id="UsersIndexSourceUploadId"/><button name="delete" class="btn btn-sm btn-danger" onclick="return confirm('アバターを削除します。本当によろしいですか。')" ng-class="{disabled: sending}" type="submit"><span class="glyphicon glyphicon-trash" aria-hidden="true"> </span> アバターの削除</button><input type="hidden" name="data[_AntiArrayAttack][multiFields]" value="" autocomplete="off"/><input type="hidden" name="data[_AntiArrayAttack][unlockFields]" value="delete" autocomplete="off"/><div style="display:none;"><input type="hidden" name="data[_Token][fields]" value="d67a76268b20ea50ac67df941785e57ac5ea0e40%3AUsersIndex._id%7CUsersIndex._source.upload_id%7C_AntiArrayAttack.multiFields%7C_AntiArrayAttack.unlockFields" id="TokenFields735012364" autocomplete="off"/><input type="hidden" name="data[_Token][unlocked]" value="delete" id="TokenUnlocked1165769235" autocomplete="off"/></div></form></li><li><form action="/read0088195/avatar/display" ng-submit="submit($event)" novalidate="novalidate" id="EditAvatarDisplayViewForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="PUT"/><input type="hidden" name="data[_Token][key]" value="eed9a2ce3491fa65abb7b02f3669085775fbe9e32b2e87acf57c0678af5df0861f8aec3d1eb44adbeeeece794a386210234390c3fe62fa175ead76a216132cf3" id="Token659953688" autocomplete="off"/></div><input type="hidden" name="data[UsersIndex][_id]" value="5000020162" id="UsersIndexId"/><input type="hidden" name="data[UsersIndex][_source][rm_user_id]" value="5000020162" id="UsersIndexSourceRmUserId"/><label><input type="radio" name="data[UsersIndex][_source][display_image]" id="UsersIndexSourceDisplayImage2" value="2" checked="checked" class="rm-form-legend-input"  required="required" />公開</label><label><input type="radio" name="data[UsersIndex][_source][display_image]" id="UsersIndexSourceDisplayImage1" value="1" class="rm-form-legend-input"  required="required" />研究者のみに公開</label><button name="save" class="btn btn-primary btn-sm btn-workflow" ng-class="{disabled: sending}" type="submit">決定</button><input type="hidden" name="data[_AntiArrayAttack][multiFields]" value="" autocomplete="off"/><input type="hidden" name="data[_AntiArrayAttack][unlockFields]" value="save" autocomplete="off"/><div style="display:none;"><input type="hidden" name="data[_Token][fields]" value="5394ee35c16d2e3c49429bb622dacad243099c12%3AUsersIndex._id%7CUsersIndex._source.rm_user_id%7C_AntiArrayAttack.multiFields%7C_AntiArrayAttack.unlockFields" id="TokenFields1982977390" autocomplete="off"/><input type="hidden" name="data[_Token][unlocked]" value="save" id="TokenUnlocked1764571374" autocomplete="off"/></div></form></li><li><button class="btn btn-sm btn-default" onclick="$('#achievements-navi').toggleClass('hidden'); $('#avatar-edit').toggleClass('hidden');"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> キャンセル</button></li></ul></nav>
+	</div>
+	</div>
+</section>
+</div></div>
+</header>
+
+			<div class="row row-offcanvas row-offcanvas-left rm-main-row">
+				<div id="container-main" role="main" class="col-xs-12 col-md-9 col-md-push-3">
+<div class="boxes-3">
+	<div id="box-1218263">
+<section id="frame-127781" class="frame plugin-curriculum-vitaes">
+	
+
+<div class="panel panel-default rm-cv-panel">
+	
+<div class="panel-heading clearfix rm-cv-panel-heading" id="profile">
+		<h2 class="pull-left rm-cv-panel-title">
+		基本情報	</h2>
+		
+	</div>
+	<div class="panel-body block">
+						<dl class="rm-cv-basic-dl rm-cv-line-breaks-2col row">
+			<dt class="col-xs-2">所属</dt><dd class="col-xs-10"><a href="/researchers?institution_code=6604*">豊田工業高等専門学校</a> 環境都市工学科 准教授</dd><dt class="col-xs-2"></dt><dd class="col-xs-10"><a href="/researchers?affiliation=独立行政法人">独立行政法人</a> 国立高等専門学校機構 国際教育・交流</dd><dt class="col-xs-2"></dt><dd class="col-xs-10"><a href="/researchers?institution_code=0436*">国立大学法人</a> 豊橋技術科学大学 高専連携推進センター 連携准教授</dd>		</dl>
+	
+							<dl class="rm-cv-basic-dl rm-cv-line-breaks-2col row">
+				<dt class="col-xs-2">
+					学位				</dt>
+				<dd class="col-xs-10">
+					<div>博士（工学）(山梨大学)</div>				</dd>
+			</dl>
+		
+		<hr class="rm-cv-hr">
+
+		<dl class="rm-cv-basic-dl rm-cv-line-breaks-2col row">
+						<dt class="col-xs-2">研究者番号 <a href="#" id="popover-help-1" data-toggle="popover" data-placement="right" data-trigger="focus" title="研究者番号" data-content="研究者番号とは、旧科研費研究者番号のことで、e-Radで使用する研究者番号です。" onclick="$('#popover-help-1').popover('toggle'); return false;" class="btn btn-link rm-help-btn" aria-label="研究者番号" data-html="1"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></dt><dd class="col-xs-4">40413786</dd><dt class="col-xs-2">J-GLOBAL ID</dt><dd class="col-xs-4"><a href="https://jglobal.jst.go.jp/detail?JGLOBAL_ID=200901019292988762" target="blank">200901019292988762</a></dd>		</dl>
+
+		<hr class="rm-cv-hr">
+
+							<dl class="rm-cv-basic-dl row">
+			<dt class="col-xs-2">外部リンク</dt><dd class="col-xs-10"><div><a href="http://civil.toyota-ct.ac.jp/stuff_matsumoto.html" target="blank">http://civil.toyota-ct.ac.jp/stuff_matsumoto.html</a></div></dd>			</dl>
+			<hr class="rm-cv-hr">
+				<div class="rm-cv-description">平成12年12月 日本技術士会 技術士一次試験（環境部門）合格（第016143号） <br />
+平成16年12月 高等学校教諭専修（工業）（山梨県教育委員会 平16 高専 第93号） <br />
+平成16年12月 日本測量士協会 測量士補（第H16-8447号） <br />
+平成19年 3月 博士（工学）山梨大学（医工博乙第1号） <br />
+平成20年 1月 衛生工学衛生管理者（免許証番号 第23018321031号） <br />
+平成20年 3月 日本技術士会 技術士二次試験（環境部門）合格（第0081796号） <br />
+平成20年 3月 日本技術士会 技術士（環境部門【環境計測】）（第63628号） <br />
+平成28年 7月 英語検定試験準1級合格（英検証：J1504103）</div><hr class="rm-cv-hr">	</div>
+</div>
+
+	<div class="rm-cv-profile-bottom clearfix">
+		<a href="#" id="popover-help-2" data-toggle="popover" data-placement="right" data-trigger="focus" title="表示タイプ ヘルプ" data-content="
+<ul class=&quot;rm-cv-creator-type-help&quot;>
+	<li class=&quot;list-group-item rm-cv-type-myself&quot;>
+		本人による登録・承認、及び、代理人による承認	</li>
+	<li class=&quot;list-group-item rm-cv-type-coauthor&quot;>
+		共著者による登録	</li>
+	<li class=&quot;list-group-item rm-cv-type-institution&quot;>
+		所属機関担当者による登録	</li>
+	<li class=&quot;list-group-item rm-cv-type-assistant&quot;>
+		代理人による登録	</li>
+	<li class=&quot;list-group-item rm-cv-type-ai&quot;>
+		AIによる登録	</li>
+	<li class=&quot;list-group-item rm-cv-type-system&quot;>
+		システムによる登録	</li>
+</ul>
+
+<hr class=&quot;rm-cv-hr&quot;>
+
+<ul class=&quot;rm-cv-display-help&quot;>
+	<li class=&quot;list-group-item-heading&quot;>
+		背景色	</li>
+	<li class=&quot;list-group-item rm-cv-display-background&quot;></li>
+	<li class=&quot;list-group-item rm-cv-display-label&quot;>
+		公開	</li>
+	<li class=&quot;list-group-item rm-cv-display-background rm-cv-researchers-only&quot;></li>
+	<li class=&quot;list-group-item rm-cv-display-label&quot;>
+		研究者のみに公開	</li>
+	<li class=&quot;list-group-item rm-cv-display-background rm-cv-closed&quot;></li>
+	<li class=&quot;list-group-item rm-cv-display-label&quot;>
+		非公開	</li>
+</ul>
+" onclick="$('#popover-help-2').popover('toggle'); return false;" class="btn btn-link rm-help-btn btn-lg rm-btn-lg" aria-label="表示タイプ ヘルプ" data-html="1"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></a>	</div>
+
+
+<div class="panel panel-default">
+	
+<div class="panel-heading clearfix rm-cv-panel-heading" id="research_interests">
+		<h2 class="pull-left rm-cv-panel-title">
+		研究キーワード	</h2>
+				&nbsp;
+		<span class="badge rm-cv-header-badge">9</span>
+	
+	</div>
+	<div class="panel-body block">
+        
+        					<ul class="list-inline rm-cv-research-interests">
+				<li>
+	
+	<div class="rm-cv-list-content">
+		
+		<a href="/read0088195/research_interests/9071350" class="rm-cv-list-title">森林</a>&nbsp;
+			</div>
+
+	</li>
+<li>
+	
+	<div class="rm-cv-list-content">
+		
+		<a href="/read0088195/research_interests/9071349" class="rm-cv-list-title">湿原</a>&nbsp;
+			</div>
+
+	</li>
+<li>
+	
+	<div class="rm-cv-list-content">
+		
+		<a href="/read0088195/research_interests/9071348" class="rm-cv-list-title">超音波</a>&nbsp;
+			</div>
+
+	</li>
+<li>
+	
+	<div class="rm-cv-list-content">
+		
+		<a href="/read0088195/research_interests/9071347" class="rm-cv-list-title">応急給水</a>&nbsp;
+			</div>
+
+	</li>
+<li>
+	
+	<div class="rm-cv-list-content">
+		
+		<a href="/read0088195/research_interests/7715917" class="rm-cv-list-title">環境物質動態</a>&nbsp;
+			</div>
+
+	</li>
+<li>
+	
+	<div class="rm-cv-list-content">
+		
+		<a href="/read0088195/research_interests/6481112" class="rm-cv-list-title">ノンポイント汚染</a>&nbsp;
+			</div>
+
+	</li>
+<li>
+	
+	<div class="rm-cv-list-content">
+		
+		<a href="/read0088195/research_interests/6481111" class="rm-cv-list-title">水質</a>&nbsp;
+			</div>
+
+	</li>
+<li>
+	
+	<div class="rm-cv-list-content">
+		
+		<a href="/read0088195/research_interests/4545136" class="rm-cv-list-title">Diffuse Pollution</a>&nbsp;
+			</div>
+
+	</li>
+<li>
+	
+	<div class="rm-cv-list-content">
+		
+		<a href="/read0088195/research_interests/4545135" class="rm-cv-list-title">Water Quality</a>&nbsp;
+			</div>
+
+	</li>
+			</ul>
+						</div>
+	</div>
+
+<div class="panel panel-default">
+	
+<div class="panel-heading clearfix rm-cv-panel-heading" id="research_areas">
+		<h2 class="pull-left rm-cv-panel-title">
+		研究分野	</h2>
+				&nbsp;
+		<span class="badge rm-cv-header-badge">2</span>
+	
+	</div>
+	<div class="panel-body block">
+        
+        					<ul class="rm-cv-research-areas">
+				<li>
+	
+	<div class="rm-cv-list-content">
+		
+		<a href="/read0088195/research_areas/4079032" class="rm-cv-list-title">社会基盤（土木・建築・防災） / 土木環境システム / </a>&nbsp;
+			</div>
+
+	
+	</li>
+<li>
+	
+	<div class="rm-cv-list-content">
+		
+		<a href="/read0088195/research_areas/4079031" class="rm-cv-list-title">環境・農学 / 環境動態解析 / </a>&nbsp;
+			</div>
+
+	
+	</li>
+			</ul>
+						</div>
+	</div>
+
+<div class="panel panel-default">
+	
+<div class="panel-heading clearfix rm-cv-panel-heading" id="research_experience">
+		<h2 class="pull-left rm-cv-panel-title">
+		経歴	</h2>
+				&nbsp;
+		<span class="badge rm-cv-header-badge">8</span>
+	
+	</div>
+	<div class="panel-body block">
+        
+        					<ul class="rm-cv-list-group">
+				<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+				2017年10月 - 現在			</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/research_experience/18247083" class="rm-cv-list-title">豊橋技術科学大学 高専連携推進センター 連携准教授</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+				2014年4月 - 現在			</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/research_experience/15588019" class="rm-cv-list-title">独立行政法人 国立高等専門学校機構 International Education &amp; Exchange Senior Specialist</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+				2013年4月 - 現在			</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/research_experience/14356784" class="rm-cv-list-title">豊田工業高等専門学校 環境都市工学科 准教授</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+				2012年4月 - 2013年3月			</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/research_experience/14356783" class="rm-cv-list-title">豊橋技術科学大学大学院工学研究科 建築・都市システム学系 准教授</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+				2010年4月 - 2012年3月			</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/research_experience/14356782" class="rm-cv-list-title">豊田工業高等専門学校 環境都市工学科 准教授</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+			</ul>
+											<hr class="rm-cv-footer-hr">
+				<div class="text-center">
+					<a href="/read0088195/research_experience" class="btn btn-default rm-cv-more-btn" role="button">もっとみる</a>				</div>
+						</div>
+	</div>
+
+<div class="panel panel-default">
+	
+<div class="panel-heading clearfix rm-cv-panel-heading" id="education">
+		<h2 class="pull-left rm-cv-panel-title">
+		学歴	</h2>
+				&nbsp;
+		<span class="badge rm-cv-header-badge">3</span>
+	
+	</div>
+	<div class="panel-body block">
+        
+        					<ul class="rm-cv-list-group">
+				<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+				2002年4月 - 2005年3月			</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/education/13400211" class="rm-cv-list-title">山梨大学大学院 博士後期課程工学研究科 社会・情報システム工学専攻</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+				2000年4月 - 2002年3月			</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/education/13166689" class="rm-cv-list-title">山梨大学 博士前期課程工学研究科 土木環境工学専攻</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+				1995年4月 - 2000年3月			</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/education/13166690" class="rm-cv-list-title">山梨大学 工学部 土木環境工学科</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+			</ul>
+						</div>
+	</div>
+
+<div class="panel panel-default">
+	
+<div class="panel-heading clearfix rm-cv-panel-heading" id="committee_memberships">
+		<h2 class="pull-left rm-cv-panel-title">
+		委員歴	</h2>
+				&nbsp;
+		<span class="badge rm-cv-header-badge">14</span>
+	
+	</div>
+	<div class="panel-body block">
+        
+        					<ul class="rm-cv-list-group">
+				<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+				2018年8月 - 現在			</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/committee_memberships/5167208" class="rm-cv-list-title">豊田市下水道ビジョン検討委員会 副委員長</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+				2018年4月 - 現在			</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/committee_memberships/5167205" class="rm-cv-list-title">国立高等専門学校機構教育改革推進本部 平成29年度コンピテンシー評価に関する調査研究事業</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+				2016年6月 - 現在			</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/committee_memberships/5167203" class="rm-cv-list-title">多治見市 市政アドバイザー</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+				2013年4月 - 現在			</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/committee_memberships/3087174" class="rm-cv-list-title">土木学会 環境システム委員会、論文審査小委員</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+				2010年4月 - 現在			</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/committee_memberships/2895627" class="rm-cv-list-title">日本陸水学会東海支部 論文編集委員会編集委員</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+			</ul>
+											<hr class="rm-cv-footer-hr">
+				<div class="text-center">
+					<a href="/read0088195/committee_memberships" class="btn btn-default rm-cv-more-btn" role="button">もっとみる</a>				</div>
+						</div>
+	</div>
+
+<div class="panel panel-default">
+	
+<div class="panel-heading clearfix rm-cv-panel-heading" id="awards">
+		<h2 class="pull-left rm-cv-panel-title">
+		受賞	</h2>
+				&nbsp;
+		<span class="badge rm-cv-header-badge">1</span>
+	
+	</div>
+	<div class="panel-body block">
+        
+        					<ul class="rm-cv-list-group">
+				<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-2">
+				2011年8月			</div>
+			<div class="col-xs-10">
+				<a href="/read0088195/awards/1531771" class="rm-cv-list-title">国立高等専門学校機構 理事長賞（若手部門） ICTによる新授業改善法の確立と全国への普及 </a>&nbsp;			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-offset-2 col-xs-10 rm-cv-list-author">
+				松本 嘉孝			</div>
+		</div>
+
+			</div>
+
+	</li>
+			</ul>
+						</div>
+	</div>
+
+<div class="panel panel-default">
+	
+<div class="panel-heading clearfix rm-cv-panel-heading" id="published_papers">
+		<h2 class="pull-left rm-cv-panel-title">
+		論文	</h2>
+				&nbsp;
+		<span class="badge rm-cv-header-badge">29</span>
+	
+	</div>
+	<div class="panel-body block">
+        
+        					<ul class="rm-cv-list-group">
+				<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/published_papers/26570339" class="rm-cv-list-title">Study of zinc pollution in river water: Average mass balance based on irrigation schedule</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+				Pertiwi Andarani, Kuriko Yokota, Makoto Saga, Takanobu Inoue, Yoshitaka Matsumoto			</div>
+			<div>
+				River Res. Apllic.&nbsp;1&nbsp;-&nbsp;10&nbsp;2020年4月&nbsp;&nbsp;<span class="label label-info rm-cv-list-label">査読有り</span>			</div>
+
+		
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/published_papers/16370511" class="rm-cv-list-title">豊田市逢妻女川の水質に工場排水および農地排水が及ぼす影響の検討</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+				松本嘉孝, 原田佳祐, 宇野嘉夏, 嵯峨慎, 横田久里子, 井上隆信			</div>
+			<div>
+				矢作川研究&nbsp;23&nbsp;1&nbsp;-&nbsp;12&nbsp;2019年3月			</div>
+
+		
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/published_papers/16370539" class="rm-cv-list-title">御嶽山南麓の王滝川流域における河川水質分布とpHの短期的変化</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+				松本嘉孝, 野崎健太郎, 宇佐見亜希子			</div>
+			<div>
+				陸の水&nbsp;2019年&nbsp;&nbsp;<span class="label label-info rm-cv-list-label">査読有り</span>			</div>
+
+		
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/published_papers/24019718" class="rm-cv-list-title">Supporting Website for Improving Teacher’s Educational Skills Containing Interview and Discussion VTR</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+				Yoshitaka Matsumoto, Taiji Tsuboi, Takeshi Yasuda, Makoto Kobayashi, Motonori Nakamura, Chisato Ohashi			</div>
+			<div>
+				ISATE2017&nbsp;2018年9月&nbsp;&nbsp;<span class="label label-info rm-cv-list-label">査読有り</span>			</div>
+
+		
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/published_papers/22343789" class="rm-cv-list-title">Runoff Load Estimation Model for Dissolved Organic Carbon that Considers Soil and Hydrologic Processes in Forested Watersheds</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+				Kazunori Ebata, Yutaka Ichikawa, Hiroshi Ishidaira, Yoshitaka Matsumoto, Kei Nishida			</div>
+			<div>
+				Journal of Water and Environment Technology&nbsp;16(5)&nbsp;199&nbsp;-&nbsp;210&nbsp;2018年&nbsp;&nbsp;<span class="label label-info rm-cv-list-label">査読有り</span>			</div>
+
+		
+			</div>
+
+	</li>
+			</ul>
+											<hr class="rm-cv-footer-hr">
+				<div class="text-center">
+					<a href="/read0088195/published_papers" class="btn btn-default rm-cv-more-btn" role="button">もっとみる</a>				</div>
+						</div>
+	</div>
+
+<div class="panel panel-default">
+	
+<div class="panel-heading clearfix rm-cv-panel-heading" id="misc">
+		<h2 class="pull-left rm-cv-panel-title">
+		MISC	</h2>
+				&nbsp;
+		<span class="badge rm-cv-header-badge">17</span>
+	
+	</div>
+	<div class="panel-body block">
+        
+        					<ul class="rm-cv-list-group">
+				<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/misc/25108664" class="rm-cv-list-title">災害時における応急給水経路の策定とその評価</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+				市岡宗詢, 松本嘉孝, 加藤崇洋, 猪八重拓郎, 杉木直, 松尾幸二郎			</div>
+			<div>
+				第45回環境システム研究論文発表会&nbsp;177&nbsp;-&nbsp;180&nbsp;2017年10月			</div>
+
+		
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/misc/24019717" class="rm-cv-list-title">Creating online teaching method tool using in a class for faculty development</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+				Matsumoto, Y, Tsuboi, T			</div>
+			<div>
+				Transactions of ISATE 2015&nbsp;314&nbsp;-&nbsp;318&nbsp;2015年8月			</div>
+
+		
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/misc/24019715" class="rm-cv-list-title">Academic Activities and Teaching Methods in university classroom in the United States.</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+				Akazawa Shinichi, Matsumoto Yoshitaka, Iwashita Ttsutomu, Fujiwara Seiji, Mito Shinichiro, Kimura Ryushi, Sakamoto Jun, Okawara Toru, Furuyama Shouichi, Kobayashi Hideaki, Sasano Junji			</div>
+			<div>
+				Transactions of ISATE 2015&nbsp;134&nbsp;-&nbsp;137&nbsp;2015年8月			</div>
+
+		
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/misc/24019714" class="rm-cv-list-title">Faculty Development Program for Nurturing Global Education and Research Abilities.</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+				Iwashita Tsutomu, Akazawa Shinichi, Sasano Junji, Matsumoto Yoshitaka, Fujiwara Seiji, Furuyama Shouichi, Kimura Ryushi, Kobayashi Hideaki, Mito Shinichiro, OkawaraToru, Sakamoto Jun			</div>
+			<div>
+				Transactions of ISATE 2015&nbsp;76&nbsp;-&nbsp;81&nbsp;2015年8月			</div>
+
+		
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/misc/22556188" class="rm-cv-list-title">学生の能動的な授業への参加を目指した授業改善 手法について ― アクティブラーニング導入のためのファーストステップ ―</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+				小林睦, 松本嘉孝			</div>
+			<div>
+				高専教育&nbsp;38&nbsp;181&nbsp;-&nbsp;185&nbsp;2015年3月&nbsp;&nbsp;<span class="label label-info rm-cv-list-label">査読有り</span>			</div>
+
+		
+			</div>
+
+	</li>
+			</ul>
+											<hr class="rm-cv-footer-hr">
+				<div class="text-center">
+					<a href="/read0088195/misc" class="btn btn-default rm-cv-more-btn" role="button">もっとみる</a>				</div>
+						</div>
+	</div>
+
+<div class="panel panel-default">
+	
+<div class="panel-heading clearfix rm-cv-panel-heading" id="books_etc">
+		<h2 class="pull-left rm-cv-panel-title">
+		書籍等出版物	</h2>
+				&nbsp;
+		<span class="badge rm-cv-header-badge">2</span>
+	
+	</div>
+	<div class="panel-body block">
+        
+        					<ul class="rm-cv-list-group">
+				<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/books_etc/10353745" class="rm-cv-list-title">身近な水の環境科学［実習・測定編］ ─自然のしくみを調べるために─</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+				日本陸水学会東海支部会編集(担当:共著)			</div>
+			<div>
+				朝倉出版&nbsp;&nbsp;2014年6月&nbsp;			</div>
+
+		
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/books_etc/9065064" class="rm-cv-list-title">東海地方の研究フィールド紹介第16回 瑞牆山試験地</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+							</div>
+			<div>
+				陸の水No.41，日本陸水学会東海支部会ニュースレター&nbsp;&nbsp;2010年&nbsp;			</div>
+
+		
+			</div>
+
+	</li>
+			</ul>
+						</div>
+	</div>
+
+<div class="panel panel-default">
+	
+<div class="panel-heading clearfix rm-cv-panel-heading" id="presentations">
+		<h2 class="pull-left rm-cv-panel-title">
+		講演・口頭発表等	</h2>
+				&nbsp;
+		<span class="badge rm-cv-header-badge">96</span>
+	
+	</div>
+	<div class="panel-body block">
+        
+        					<ul class="rm-cv-list-group">
+				<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/presentations/19886586" class="rm-cv-list-title">御嶽山麓水系の水質特性，特に主要イオン濃度の分布</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+				松本 嘉孝			</div>
+			<div>
+				応用生態工学会 第22回全国大会&nbsp;2018年9月21日&nbsp;			</div>
+
+		
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/presentations/19532717" class="rm-cv-list-title">愛知県東尾張・西三河地域における湿地の水質特性について</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+				松本嘉孝, 三木章史, 神谷恭一, 川島賢治			</div>
+			<div>
+				日本湿地学会 2018年度（第10回）大会&nbsp;2018年9月&nbsp;日本湿地学会&nbsp;			</div>
+
+		
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/presentations/19532708" class="rm-cv-list-title">木曽川のワンド・タマリの水質環境 ー地形がもたらす影響についてー</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+				松本 嘉孝			</div>
+			<div>
+				一般公開講演会，木曽川流域の水環境，主催：日本水環境学会ノンポイント汚染研究委員会，岐阜市，岐阜県&nbsp;2018年8月&nbsp;			</div>
+
+		
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/presentations/19532572" class="rm-cv-list-title">他分野との連携研究が開く —新たな土木環境系研究事例高専と技科大の連携を通じて-</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+				松本 嘉孝			</div>
+			<div>
+				第29回高専・技科大建設系教員研究交流集会&nbsp;2018年8月&nbsp;			</div>
+
+		
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/presentations/19532706" class="rm-cv-list-title">Distribution of Anion and Cation concentration at Otaki River Watershed Located at Southern Part of Mt. Ontake</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+				Yoshitaka Matsumoto, Akiko Usami, Kentaro Nozaki			</div>
+			<div>
+				The 8th EAFES, Nagoya, Japan, S12-04&nbsp;2018年5月&nbsp;			</div>
+
+		
+			</div>
+
+	</li>
+			</ul>
+											<hr class="rm-cv-footer-hr">
+				<div class="text-center">
+					<a href="/read0088195/presentations" class="btn btn-default rm-cv-more-btn" role="button">もっとみる</a>				</div>
+						</div>
+	</div>
+
+<div class="panel panel-default">
+	
+<div class="panel-heading clearfix rm-cv-panel-heading" id="teaching_experience">
+		<h2 class="pull-left rm-cv-panel-title">
+		担当経験のある科目(授業)	</h2>
+				&nbsp;
+		<span class="badge rm-cv-header-badge">8</span>
+	
+	</div>
+	<div class="panel-body block">
+        
+        					<ul class="rm-cv-list-group">
+				<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+							</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/teaching_experience/850493" class="rm-cv-list-title">国際技術表現</a>&nbsp;&nbsp;(<a href="/researchers?institution_code=6604000000">豊田工業高等専門学校</a>)&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+							</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/teaching_experience/850492" class="rm-cv-list-title">環境生物学</a>&nbsp;&nbsp;(<a href="/researchers?institution_code=6604000000">豊田工業高等専門学校</a>)&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+							</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/teaching_experience/850491" class="rm-cv-list-title">上下水道工学</a>&nbsp;&nbsp;(<a href="/researchers?institution_code=6604000000">豊田工業高等専門学校，豊橋技術科学大学</a>)&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+							</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/teaching_experience/850490" class="rm-cv-list-title">情報処理</a>&nbsp;&nbsp;(<a href="/researchers?institution_code=6604000000">豊田工業高等専門学校</a>)&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+							</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/teaching_experience/850489" class="rm-cv-list-title">水環境工学</a>&nbsp;&nbsp;(<a href="/researchers?institution_code=6604000000">豊田工業高等専門学校，豊橋技術科学大学</a>)&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+			</ul>
+											<hr class="rm-cv-footer-hr">
+				<div class="text-center">
+					<a href="/read0088195/teaching_experience" class="btn btn-default rm-cv-more-btn" role="button">もっとみる</a>				</div>
+						</div>
+	</div>
+
+<div class="panel panel-default">
+	
+<div class="panel-heading clearfix rm-cv-panel-heading" id="association_memberships">
+		<h2 class="pull-left rm-cv-panel-title">
+		所属学協会	</h2>
+				&nbsp;
+		<span class="badge rm-cv-header-badge">7</span>
+	
+	</div>
+	<div class="panel-body block">
+        
+        					<ul class="rm-cv-list-group">
+				<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+							</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/association_memberships/9176886" class="rm-cv-list-title">日本湿地学会</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+							</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/association_memberships/9176885" class="rm-cv-list-title">日本陸水学会</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+							</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/association_memberships/7228106" class="rm-cv-list-title">American Geographic Union</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+							</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/association_memberships/7228105" class="rm-cv-list-title">陸水学会東海支部会</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div class="row">
+			<div class="col-xs-3">
+							</div>
+			<div class="col-xs-9">
+				<a href="/read0088195/association_memberships/7228104" class="rm-cv-list-title">日本技術士会</a>&nbsp;			</div>
+		</div>
+
+			</div>
+
+	</li>
+			</ul>
+											<hr class="rm-cv-footer-hr">
+				<div class="text-center">
+					<a href="/read0088195/association_memberships" class="btn btn-default rm-cv-more-btn" role="button">もっとみる</a>				</div>
+						</div>
+	</div>
+
+<div class="panel panel-default">
+	
+<div class="panel-heading clearfix rm-cv-panel-heading" id="works">
+		<h2 class="pull-left rm-cv-panel-title">
+		Works(作品等)	</h2>
+				&nbsp;
+		<span class="badge rm-cv-header-badge">6</span>
+	
+	</div>
+	<div class="panel-body block">
+        
+        					<ul class="rm-cv-list-group">
+				<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/works/5362624" class="rm-cv-list-title">豊橋技科大高専連携教育研究プロジェクト（研究）（教育）</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+							</div>
+
+			<div>
+				2011年			</div>
+
+		
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/works/5362623" class="rm-cv-list-title">豊橋技科大高専連携教育研究プロジェクト（研究）（教育）</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+							</div>
+
+			<div>
+				2010年			</div>
+
+		
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/works/5362620" class="rm-cv-list-title">日本学術振興会，若手研究B，新たな河川環境管理を目指す林地からの微細有機物の動態および発生メカニズム解析</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+							</div>
+
+			<div>
+				2008年 - 2009年			</div>
+
+		
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/works/5362622" class="rm-cv-list-title">豊橋技科大高専連携教育研究プロジェクト（研究）</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+							</div>
+
+			<div>
+				2009年			</div>
+
+		
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		
+			<div>
+				<a href="/read0088195/works/5362621" class="rm-cv-list-title">財団法人中部電力基礎技術研究所 国際交流援助資金</a>&nbsp;			</div>
+			<div class="rm-cv-list-author">
+							</div>
+
+			<div>
+				2008年			</div>
+
+		
+			</div>
+
+	</li>
+			</ul>
+											<hr class="rm-cv-footer-hr">
+				<div class="text-center">
+					<a href="/read0088195/works" class="btn btn-default rm-cv-more-btn" role="button">もっとみる</a>				</div>
+						</div>
+	</div>
+
+<div class="panel panel-default">
+	
+<div class="panel-heading clearfix rm-cv-panel-heading" id="research_projects">
+		<h2 class="pull-left rm-cv-panel-title">
+		共同研究・競争的資金等の研究課題	</h2>
+				&nbsp;
+		<span class="badge rm-cv-header-badge">16</span>
+	
+	</div>
+	<div class="panel-body block">
+        
+        					<ul class="rm-cv-list-group">
+				<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div>
+			<a href="/read0088195/research_projects/11610666" class="rm-cv-list-title">広帯域超音波パルス波による水底堆積物の層厚・粒径観測手法の開発</a>&nbsp;		</div>
+		<div>
+			日本学術振興会&nbsp;科学研究補助金 基盤C&nbsp;		</div>
+		<div class="rm-cv-list-author">
+			松本 嘉孝		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div>
+			<a href="/read0088195/research_projects/11610667" class="rm-cv-list-title">御嶽山噴火により攪乱されたダム湖流入河川の水質 変遷と河川生物の応答関係の把握</a>&nbsp;		</div>
+		<div>
+			一般財団法人水源地環境センター&nbsp;ＷＥＣ応用生態研究助成要領&nbsp;		</div>
+		<div class="rm-cv-list-author">
+			松本 嘉孝		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div>
+			<a href="/read0088195/research_projects/11316673" class="rm-cv-list-title">実践的教育を可能とする教育スキルアーカイブの構築とICTによる共有</a>&nbsp;		</div>
+		<div>
+			日本学術振興会&nbsp;科学研究費補助金 基盤B&nbsp;		</div>
+		<div class="rm-cv-list-author">
+			坪井泰士		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div>
+			<a href="/read0088195/research_projects/10990941" class="rm-cv-list-title">超音波を用いた陸水域に堆積する底泥厚の新観測手法の開発</a>&nbsp;		</div>
+		<div>
+			東海産業技術振興財団&nbsp;助成研究&nbsp;		</div>
+		<div class="rm-cv-list-author">
+			松本 嘉孝		</div>
+
+			</div>
+
+	</li>
+<li class="list-group-item rm-cv-disclosed rm-cv-type-myself rm-cv-created">
+	
+	<div class="rm-cv-list-content">
+		
+		<div>
+			<a href="/read0088195/research_projects/10431241" class="rm-cv-list-title">森林域からの溶存有機炭素移動モデルの構築と他流域域への適用検討</a>&nbsp;		</div>
+		<div>
+			日本学術振興会&nbsp;科学研究費補助金 若手B&nbsp;		</div>
+		<div class="rm-cv-list-author">
+			松本 嘉孝		</div>
+
+			</div>
+
+	</li>
+			</ul>
+											<hr class="rm-cv-footer-hr">
+				<div class="text-center">
+					<a href="/read0088195/research_projects" class="btn btn-default rm-cv-more-btn" role="button">もっとみる</a>				</div>
+						</div>
+	</div>
+</section>
+</div></div>
+</div>
+				
+<div id="nc-offcanvas-left" class="col-xs-5 col-md-3 col-md-pull-9 sidebar-offcanvas" role="navigation">
+	
+<div class="boxes-2">
+	<div id="box-59">
+<section class="frame panel panel-default nc-content-list plugin-rm-menus" ng-init="frameToggle10=true">
+			<div class="panel-heading rm-frame-heading clearfix">
+						<h3 class="pull-left rm-frame-title">
+				メニュー			</h3>
+
+			
+			
+						<a class="text-right rm-frame-toggle-btn" href="" ng-click="frameToggle10 = !frameToggle10">
+				<span class="glyphicon glyphicon-menu-down" aria-hidden="true" aria-label="Open" ng-show="frameToggle10"></span>
+				<span class="glyphicon glyphicon-menu-right" aria-hidden="true" aria-label="Close" ng-show="!frameToggle10" ng-cloak></span>
+			</a>
+		</div>
+	
+	<div class="panel-body block"
+			ng-show="frameToggle10">
+		
+<nav ng-controller="RmMenusController" id="rm-menus-outer">
+	<div ng-show="myPortalMenusShow">
+		<div class="list-group"><a href="/read0088195" id="MenuFramesPageMajor135385" class="list-group-item clearfix menu-tree-0 active"><span class="pull-left">マイポータル</span><span class="pull-right"><span class="glyphicon glyphicon-menu-down"> </span> </span></a><a href="/read0088195/研究ブログ" id="MenuFramesPageMajor517546" class="list-group-item clearfix menu-tree-1"><span class="pull-left">研究ブログ</span><span class="pull-right"></span></a><a href="/read0088195/資料公開" id="MenuFramesPageMajor668801" class="list-group-item clearfix menu-tree-1"><span class="pull-left">資料公開</span><span class="pull-right"></span></a></div>	</div>
+</nav>
+	</div>
+</section>
+
+<section class="frame panel panel-default nc-content-list plugin-coauthors" ng-init="frameToggle9=true">
+			<div class="panel-heading rm-frame-heading clearfix">
+						<h3 class="pull-left rm-frame-title">
+				共著者の一覧			</h3>
+
+			
+			
+						<a class="text-right rm-frame-toggle-btn" href="" ng-click="frameToggle9 = !frameToggle9">
+				<span class="glyphicon glyphicon-menu-down" aria-hidden="true" aria-label="Open" ng-show="frameToggle9"></span>
+				<span class="glyphicon glyphicon-menu-right" aria-hidden="true" aria-label="Close" ng-show="!frameToggle9" ng-cloak></span>
+			</a>
+		</div>
+	
+	<div class="panel-body block"
+			ng-show="frameToggle9">
+		<div id="rm-coauthors-outer" ng-controller="Coauthors" class="" ng-cloak
+	 ng-init="init(
+	'/read0088195/coauthors/coauthors/index',
+	[{&quot;Related&quot;:{&quot;permalink&quot;:&quot;00184755&quot;,&quot;last_modified&quot;:&quot;2020-10-11 01:57:08&quot;,&quot;name_str&quot;:&quot;\u4e95\u4e0a \u9686\u4fe1&quot;,&quot;avatar&quot;:&quot;\/img\/curriculum_vitaes\/noimage_thumbnail.png&quot;}},{&quot;Related&quot;:{&quot;permalink&quot;:&quot;read0010320&quot;,&quot;last_modified&quot;:&quot;2020-05-18 06:28:18&quot;,&quot;name_str&quot;:&quot;\u5742\u672c \u5eb7&quot;,&quot;avatar&quot;:&quot;\/img\/curriculum_vitaes\/noimage_thumbnail.png&quot;}},{&quot;Related&quot;:{&quot;permalink&quot;:&quot;read0052443&quot;,&quot;last_modified&quot;:&quot;2020-06-08 14:55:58&quot;,&quot;name_str&quot;:&quot;\u897f\u7530 \u7d99&quot;,&quot;avatar&quot;:&quot;\/img\/curriculum_vitaes\/noimage_thumbnail.png&quot;}},{&quot;Related&quot;:{&quot;permalink&quot;:&quot;read0064517&quot;,&quot;last_modified&quot;:&quot;2020-07-05 02:08:46&quot;,&quot;name_str&quot;:&quot;\u5c0f\u6797 \u7766&quot;,&quot;avatar&quot;:&quot;\/img\/curriculum_vitaes\/noimage_thumbnail.png&quot;}},{&quot;Related&quot;:{&quot;permalink&quot;:&quot;ino-taku&quot;,&quot;last_modified&quot;:&quot;2020-10-26 08:37:05&quot;,&quot;name_str&quot;:&quot;\u732a\u516b\u91cd \u62d3\u90ce&quot;,&quot;avatar&quot;:&quot;data:image\/jpeg;base64,\/9j\/4AAQSkZJRgABAQEAYABgAAD\/\/gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzUK\/9sAQwAIBgYHBgUIBwcHCQkICgwUDQwLCwwZEhMPFB0aHx4dGhwcICQuJyAiLCMcHCg3KSwwMTQ0NB8nOT04MjwuMzQy\/9sAQwEJCQkMCwwYDQ0YMiEcITIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy\/8AAEQgAUABQAwEiAAIRAQMRAf\/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC\/\/EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29\/j5+v\/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC\/\/EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29\/j5+v\/aAAwDAQACEQMRAD8AzqD1ozSV7J45o6Cca9Z\/7\/8AQ1d+IWvyQeTo1oT50+DJt647Cs\/RWxrln\/11FVZ3S7+IupXMqCUW7iNU3gEYAyQD16V5+MfLr5HoYKPM7HM6v4VuorMXLks57AdBWUNPdFwwAcHBr2i8lsjFDFJESs+FQlgoyfrXmfinSL3Sb4yCM+Q5+V1OR+YrzKVRv4j1KtFLWJhRwTW8geIssinIZTgg17L4E8Ryazpht7ts3duMEnq6+teS22oK6gSKM9D9a6vwXeLD4mtI4h\/rgVb6YJ\/p+ldCZzNHrlTWf\/H\/AG\/\/AF1X+dQ5qay\/4\/7f\/rqv86ozPH80hNJSGvZPJLuktjWrP\/rsv86349It7HVb+5mKo9zcl97f3SB\/9eua01tur2Z\/6bJ\/MV2mvOFWNlljVycFWwSR9K87Gq56OXu0jWubawu4rXyDHILdvlZSCFNaF3a2dxZtBNBHIrLhgVGKzNKklFqu9gEI+55eP1zUk+oW8KlC2W7AdTXiN9j6BpHhfiHS\/wCzvE95awxERCTKgdADzXQ\/Dmze78RrdEZjtYiSf9ojA\/mab8RyzXltsby3lBdwOpA4Ga3\/AIZpbWukzZmjE08vCbhkgD\/65rtpXlFM8yslGTSO\/wA1PZf8f9v\/ANdV\/mKr5qey\/wCQhbf9dV\/mK2Oc8czUVxMYkLKMn0p26s+5kcTFgSUX7w9q9StPljoedRgpS1IjqN3HMHRgjIcggdDWDc397Lq322S4keZWyrs2TW5cKGt969OhxVGexDg7etcEpOW53xio\/CekaXe6veaBZ3cMrPHIuJQq5KHJB\/Cum0jRWuSrKHkkPXPaub8IeJrfwn4G+1Tr50v2nyYogcEk8\/yya7Hwr8RbTU4NSM1mLU2sXnAr0cemfXNck8MpO52QxLirPVnBfEnSo59Zgs4ZAZLdP30nqx5x9AMVyDQvp89rEkhOxScg966C+vXvLue6nbLyuWY+5rGFogupLosWZuACc810RioqyOeUnJ3Z0mn+JtVgRQZvMXssgzXf+GdU\/tR7aUrsdZ1VgOnUV5PbyM8m1fz9q9C8BOPtPl85E8Zz+NEiTzt5Nqk9cCqUUqtuZ22Hrkj\/ADxT7h22ZU9+fepokV4gfunHNdeIlrY5sPHS5TtnSSW4tyAM4YAHjp2qWBQ0AbqR8p+orKYiz1tNhGyTg46A1rQ\/JcyREfLIN4+veuY6SpqV6qaTBabCT9r80N2ACkEfjkflXYR39pH4D06xtkjM80jTTyL97IJGD+n4VxGsx4s9xH3JAf6Vb00\/Z9PQnq\/zH8aANG4lCLgngVSnufLtnl\/ujge9V5p\/ObP8I6VUuZlkeKDd1bJ\/CgDWsWmEeQfmPQAV6F8PW\/4mY3Btxkj+n3q4qxik8tWJwMcZru\/A+F1BFGP9fEf1qZDPM3mkdvLhiDHPLscAf41Mq3MaDM0WO6lMD86pQXCRE8bnJ\/L\/AOvXQ6TpF5r062UEILOORu+6PUntWs5czbZnBJKxxOuFhfxsJMrjIA6Ka6Dw7outa\/b\/AGmzMUvkShCjPhiD1\/DFb918N7VroQxamZTDIEn2x5QEH5lDE5JHsMV6VGItOe3trOxBtVwH8uP7ox2Fcs6ttEddKhzayPJvF3he\/wBM0vzJk3I7AEoCQhyMZOO9YV2SsCRocEjH0Fe+XWm2+rwvZ39s3lTKCQCVAI5BxnqDVKx+HOgTWr2cts7zmPP2syHIb6dMe1FOtfR7jrUOXWOx4Lu2jBOKqRLPNqHmQoG8vg5Ga77UPDUOn381rNCBJC5U55zTIbKK23CNAoPOB0rY5ilp9y\/l\/vI8DpuByBXe+CR\/xMYm9Z4x+tcoIow5ZVAJ64rrfBYxdwADj7UmPzFKQH\/\/2Q==&quot;}},{&quot;Related&quot;:{&quot;permalink&quot;:&quot;hirokazu_haga&quot;,&quot;last_modified&quot;:&quot;2020-06-09 13:39:34&quot;,&quot;name_str&quot;:&quot;\u82b3\u8cc0 \u5f18\u548c&quot;,&quot;avatar&quot;:&quot;\/img\/curriculum_vitaes\/noimage_thumbnail.png&quot;}}],
+	7,
+	6,
+	[true,4,&quot;B000345863&quot;]	)">
+	<div ng-hide="coauthors.length">
+		まだ共著者が1人も登録されていません。	</div>
+
+	<div class="rm-side-block-avatar-list">
+		<div class="col-sm-6 col-xs-6" ng-repeat="coauthor in coauthors">
+			<div class="thumbnail">
+				<a ng-href="/{{coauthor.Related.permalink}}">
+					<img ng-src="{{coauthor.Related.avatar}}" class="" alt="アバター">
+				</a>
+				<div class="caption">
+					<a ng-href="/{{coauthor.Related.permalink}}">
+						<div>
+							{{coauthor.Related.name_str}}
+						</div>
+					</a>
+					<p class="text-info">
+						{{coauthor.Related.last_modified}}&nbsp;更新					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="rm-side-block-more" ng-show="coauthorCount > limit">
+		<button #="#" class="btn btn-default" role="button" ng-click="more()" ng-disabled="coauthorCount <= offset" type="submit">もっとみる</button>	</div>
+</div>
+	</div>
+</section>
+</div></div>
+</div>
+
+
+							</div>
+
+					</main>
+
+		
+<footer id="nc-system-footer" role="contentinfo">
+	<div class="container box-footer">
+		<div class="row">
+			<div class="copyright col-xs-3">
+				<span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> 2017 researchmap
+			</div>
+			<div class="rm-privacy-and-terms col-xs-6">
+									<a href="/public/terms-of-service">利用規約</a>							</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript">
+$(function() {
+	$(document).on('keypress', 'input:not(.allow-submit)', function(event) {
+		return event.which !== 13;
+	});
+});
+</script>
+
+		
+                    </body>
+</html>

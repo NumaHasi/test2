@@ -1,6 +1,6 @@
 import os
 
-#os.system("curl http://abehiroshi.la.coocan.jp/ > test.txt")
+os.system("curl https://researchmap.jp/read0088195 > test.txt")
 f = open("test.txt",'r')
 markdown = open("test.md",'w')
 
