@@ -7,7 +7,7 @@ hirotaka
 
 
 
-[testmd](test.md)
+[Y.matsu](test.md)
 
 [mypage](https://numahasi.github.io/test2/)
 
