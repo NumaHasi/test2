@@ -1,9 +1,9 @@
 import os
 #os.system("curl http://abehiroshi.la.coocan.jp/ > test8.html")
-f = open("test8.html",'r')
+f = open("test.txt",'r')
 markdown = open("test.md",'w')
-#print(f.read() )
-#markdown.write(f.read())
+print(f.read() )
+markdown.write(f.read())
 markdown.close()
 f.close()
 
