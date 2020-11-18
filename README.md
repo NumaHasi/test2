@@ -2,9 +2,6 @@
 
 ### NumaHasi
 
-hirotaka
-
-
 
 
 [Y.matsu](test.md)
