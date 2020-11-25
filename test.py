@@ -5,14 +5,16 @@ for i in range(10):
         
     os.system("curl http://192.168.0.100/ > test.txt")
     f = open("test.txt",'r')
-   
+    d = open("data.tet","w")
     markdown = open("test.md",'w')
     line=f.read()
     value=line.replace("water content is",str(i))
     value=value.replace("%","")
+    d.write(value)
     markdown.write(value)
     markdown.close()
     f.close()
+    d.close()
 
     os.system("curl http://192.168.0.101/ > test2.txt")
     f = open("test2.txt",'r')
