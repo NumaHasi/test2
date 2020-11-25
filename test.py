@@ -1,6 +1,7 @@
 import os
 import time
 
+
 for i in range(2):
         
     os.system("curl http://192.168.0.101/ > test.txt")
@@ -13,7 +14,8 @@ for i in range(2):
     value=value.replace("%","")
     d.write(value)
     
-    #gnuplot
+    #gnuplot "test.gn"
+    #plot 'data.txt'
     #set terminal png
     #replot
     #set output "data.png"
