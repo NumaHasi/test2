@@ -2,6 +2,8 @@ import os
 import time
 
 for i in range(5):
+    
+    #max 
         
     os.system("curl http://192.168.0.102/ > test.txt")
     f = open("test.txt",'r')
