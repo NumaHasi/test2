@@ -82,7 +82,7 @@ for i in range(5):
     os.system("gnuplot getGragh.gp")
     os.system("gnuplot getGragh2.gp")
     os.system("gnuplot getGragh3.gp")
-    time.sleep(60)
+    time.sleep(6)
     
         
     
