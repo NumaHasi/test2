@@ -123,7 +123,7 @@ for i in range(5):
                 o.write(line)
         o.close()
         
-        os.system("cp without2.txt water3")
+        os.system("cp without3.txt water3")
     
     
 
