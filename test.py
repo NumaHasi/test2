@@ -38,16 +38,19 @@ for i in range(5):
 
     
  
+    #kokogayaritai
     
-#     if int(value1) < 1792.8:
-#         value1=value1/224.1
-#     
-#         
+    x=value1
+    if int(x) < 1792.8:
+        x=x/224.1
+        
+     
+         
        
     #2/4 kokomade
         
     #value1=value1.replace("%",".0")
-    d.write(value1+"\n")
+    d.write(x+"\n")
     
     
     
