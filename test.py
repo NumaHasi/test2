@@ -20,7 +20,7 @@ for i in range(2):
     #replot
     #set output "data.png"
     
-    markdown.write(value)
+    markdown.write(f.read())
     
     markdown.close()
     f.close()
