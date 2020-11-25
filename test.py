@@ -53,6 +53,7 @@ for i in range(5):
     line2=f.read()
     value2=line2.replace("water content is",str(i))
     value2=value2.replace("%","")
+    
     d.write(value2+"\n")
 
     #markdown.write(value)
@@ -77,7 +78,7 @@ for i in range(5):
 
 
 
-    os.system("curl http://192.168.0.103/ > test3.txt")
+    os.system("curl http://192.168.0.102/ > test3.txt")
     f = open("test3.txt",'r')
     d = open("water3",'a')
     #markdown = open("test3.md",'a')
