@@ -43,7 +43,7 @@ for i in range(5):
     x=value1.replace("0 ","")
     
     
-    k=open("withoutX.txt","w")
+#     k=open("withoutX.txt","w")
 #     print(x)
 # 
     if float(x) < 1792.8:
