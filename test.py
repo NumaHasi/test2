@@ -3,7 +3,7 @@ import time
 
 
 for i in range(60):
-    if i > 0:
+    if i > 3:
         x = 0
         o = open ("without.txt","w")
         with open("data.txt","r")as f:
@@ -12,6 +12,7 @@ for i in range(60):
             if x > 1:
                 o.write(line)
         o.close()
+        f.close()
         
         os.system("cp without.txt data.txt")
         
@@ -93,7 +94,7 @@ for i in range(60):
     os.system("gnuplot getGraph2.gp")
     os.system("gnuplot getGraph3.gp")
     
-    time.sleep(60)
+    time.sleep(30)
     
 open("data.txt","w").close
 open("data2.txt","w").close
