@@ -8,10 +8,7 @@ for i in range(5):
     d = open("water1","a")
     o = open("without.txt","w")
     
-    c = open("rapid","w")
-    speed1=f.read()
-    speed1=speed1.split("%")[1]
-    c.close()
+    
     
     #markdown = open("test.md",'w')
        
@@ -49,8 +46,11 @@ for i in range(5):
         os.system("cp without.txt water1")
         
         
-        
-        
+    f = open("test.txt",'r')
+    c = open("kasoku.txt","w")
+    speed1=f.read()
+    speed1=speed1.split("%")[1]
+    c.close()
         
     
     
