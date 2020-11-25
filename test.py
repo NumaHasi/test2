@@ -26,6 +26,7 @@ for i in range(5):
     #markdown.close()
     f.close()
     d.close()
+    
     if i>2:
         
         x=0
@@ -42,10 +43,19 @@ for i in range(5):
     f = open("test.txt",'r')
     c = open("kasoku.txt","w")
     speed1=f.read()
-    speed1=speed1.split("%")[1]
-    c.write(speed1)
-    c.close()
-        
+    
+    #s=open("without-kasoku.txt","w")
+    
+    #s.write
+    
+#     speed1=speed1.split("%")[1]
+#     c.write(speed1)
+#     c.close()
+    
+#     with open("kasoku.txt") as f:
+#         next(f)
+#         for line in f :
+#             print(line.strip("\n"))
     
     
 
