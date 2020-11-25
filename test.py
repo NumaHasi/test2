@@ -1,13 +1,15 @@
 import os
 import time
 
-for i in range(60):
+for i in range(10):
         
     os.system("curl http://192.168.0.100/ > test.txt")
     f = open("test.txt",'r')
     markdown = open("test.md",'w')
-
-    markdown.write(f.read())
+    line=f.read()
+    value=line.replace("water content is",str(i))
+    value=value.replace("%","")
+    markdown.write(value)
     markdown.close()
     f.close()
 
