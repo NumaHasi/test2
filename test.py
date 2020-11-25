@@ -50,6 +50,9 @@ for i in range(5):
         
 #
         x=str(float(x)/224.1)
+        
+#         if else:
+#             x=str(x)
          
 #         k.write(x)
 #          
