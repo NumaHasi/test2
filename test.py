@@ -8,7 +8,7 @@ for i in range(5):
     os.system("curl http://192.168.0.102/ > test.txt")
     f = open("test.txt",'r')
     d = open("water1","a")
-    o = open("without.txt","w")    
+    o = open("without.txt","w")
     #markdown = open("test.md",'w')
     line1=f.read()
     value1=line1.replace("water content is",str(i))
@@ -44,17 +44,17 @@ for i in range(5):
     
     
     k=open("withoutX.txt","w")
-    print(x)
+#     print(x)
 # 
     if float(x) < 1792.8:
         
 #
         x=str(float(x)/224.1)
          
-        k.write(x)
-         
-        k.close()        
-     
+#         k.write(x)
+#          
+#         k.close()        
+#      
          
        
     #2/4 kokomade
