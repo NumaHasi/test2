@@ -3,7 +3,7 @@ import time
 
 
 for i in range(60):
-    if i > 5:
+    if i > 0:
         x = 0
         o = open ("without.txt","w")
         with open("data.txt","r")as f:
@@ -44,7 +44,7 @@ for i in range(60):
     
     line1=f.read()
     value1=line1.replace("water content is",str(i)+str(.0))
-    value1=value1.replace("%",".0")
+    value1=value1.replace("%","")
     d.write(value1+"\n")
     
     
@@ -60,7 +60,7 @@ for i in range(60):
     
     line2=f.read()
     value2=line2.replace("water content is",str(i)+str(.0))
-    value2=value2.replace("%",".0")
+    value2=value2.replace("%","")
     d.write(value2+"\n")
 
     #markdown.write(f.read())
@@ -75,7 +75,7 @@ for i in range(60):
 
     line3=f.read()
     value3=line3.replace("water content is",str(i)+str(.0))
-    value3=value3.replace("%",".0")
+    value3=value3.replace("%","")
     d.write(value3+"\n")
 
     #markdown.write(f.read())
@@ -95,4 +95,7 @@ for i in range(60):
     
     time.sleep(60)
     
-open("test.txt","w").close
+open("data.txt","w").close
+open("data2.txt","w").close
+open("data3.txt","w").close
+
