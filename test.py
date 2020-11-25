@@ -39,7 +39,7 @@ for i in range(60):
         
     os.system("curl http://192.168.0.100/ > test.txt")
     f = open("test.txt",'r')
-    d = open("data.txt","a")
+    d = open("water1","a")
     #markdown = open("test.md",'w')
     
     line1=f.read()
@@ -55,7 +55,7 @@ for i in range(60):
 
     os.system("curl http://192.168.0.101/ > test2.txt")
     f = open("test2.txt",'r')
-    d = open("data2.txt","a")
+    d = open("water2","a")
     #markdown = open("test2.md",'w')
     
     line2=f.read()
@@ -70,7 +70,7 @@ for i in range(60):
 
     os.system("curl http://192.168.0.102/ > test3.txt")
     f = open("test3.txt",'r')
-    d = open("data3.txt","a")
+    d = open("water3","a")
     #markdown = open("test3.md",'w')
 
     line3=f.read()
@@ -95,7 +95,7 @@ for i in range(60):
     
     time.sleep(30)
     
-open("data.txt","w").close
-open("data2.txt","w").close
-open("data3.txt","w").close
+open("water1","w").close
+open("water2","w").close
+open("water3","w").close
 
