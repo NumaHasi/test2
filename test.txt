@@ -1,2 +1,2 @@
-water content is 1175% 
- acc X:-2016 Y:-540 Z:16228
+water content is 1306% 
+ acc X:-2008 Y:-516 Z:16168
