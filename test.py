@@ -29,7 +29,7 @@ for i in range(2):
     line2=f.read()
     value2=line2.replace("water content is",str(i))
     value2=value2.replace("%","")
-    d.write(value2)
+    d.write(value2+"\n")
 
     markdown.write(f.read())
     markdown.close()
@@ -38,11 +38,18 @@ for i in range(2):
 
     os.system("curl http://192.168.0.102/ > test3.txt")
     f = open("test3.txt",'r')
+    d = open("data3.txt","a")
     markdown = open("test3.md",'w')
+
+    line3=f.read()
+    value3=line3.replace("water content is",str(i))
+    value3=value3.replace("%","")
+    d.write(value3+"\n")
 
     markdown.write(f.read())
     markdown.close()
     f.close()
+    d.close()
 
     os.system("git add .")
 
@@ -51,4 +58,7 @@ for i in range(2):
     os.system("git push")
     
     os.system("gnuplot getGraph.gp")
+    os.system("gnuplot getGraph2.gp")
+    os.system("gnuplot getGraph3.gp")
+    
     time.sleep(60)

@@ -1,4 +1,4 @@
 set terminal png
-plot "test10.txt" w l
-set output "test.png"
+plot "data2.txt" w l
+set output "data2.png"
 replot

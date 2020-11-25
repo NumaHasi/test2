@@ -4,7 +4,7 @@
 
 
 
-<spam style='color: red; '>[esp-1](test.md)</span>
+[esp-1](test.md)
 
 
 [esp-2](test2.md)
