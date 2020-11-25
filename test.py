@@ -11,11 +11,14 @@ for i in range(5):
     c = open("rapid","w")
     speed1=f.read()
     speed1=speed1.split("%")[1]
+    c.close()
     
     #markdown = open("test.md",'w')
-    
-    
+       
     line1=f.read()
+    
+    
+    
     value1=line1.replace("water content is",str(i))
     
     value1=value1.split("%")[0]
