@@ -52,11 +52,11 @@ for i in range(5):
 #     c.write(speed1)
 #     c.close()
     
-      with open("test.txt") as f:
-          next(f)
-          for line in f :
-              print(line.strip("\n"))     
-    
+#       with open("test.txt") as f:
+#           next(f)
+#           for line in f :
+#               print(line.strip("\n"))     
+#     
 
     os.system("curl http://192.168.0.101/ > test2.txt")
     f = open("test2.txt",'r')
