@@ -3,7 +3,7 @@ import time
 
 for i in range(5):
         
-    os.system("curl http://192.168.0.100/ > test.txt")
+    os.system("curl http://192.168.0.102/ > test.txt")
     f = open("test.txt",'r')
     d = open("water1","a")
     o = open("without.txt","w")
