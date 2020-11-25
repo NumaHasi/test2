@@ -1,0 +1,5 @@
+set title "test"
+plot sin(x) w l
+set terminal png
+replot
+set output "data.png"
