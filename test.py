@@ -3,31 +3,62 @@ import time
 
 for i in range(5):
     
-    #max 
+    #max hatarakikaisuu
         
     os.system("curl http://192.168.0.102/ > test.txt")
     f = open("test.txt",'r')
     d = open("water1","a")
     o = open("without.txt","w")    
     #markdown = open("test.md",'w')
-    line1=f.read()    
+    line1=f.read()
     value1=line1.replace("water content is",str(i))
+    
+
+        
+    
+    
+    
     #tuikasitayatu
     value1=value1.split("%")[0]
     
+        #2/4 tuika
+    #sankou atodekesu
+#     if i>5:
+#         
+#         x=0
+#         with open("water1") as f:
+#             x=x+1
+#             line=f.readline()
+#             if x !=1:
+#                 o.write(line)
+#         o.close()
+#         
+#         os.system("cp without.txt water1")
+#         
+
+    
+ 
+    
+#     if int(value1) < 1792.8:
+#         value1=value1/224.1
+#     
+#         
+       
+    #2/4 kokomade
+        
     #value1=value1.replace("%",".0")
     d.write(value1+"\n")
     
-  
-        
-        
     
+    
+  
 
     #markdown.write(value)
     
     #markdown.close()
     f.close()
     d.close()
+    
     
 #     if i>5:
 #         
