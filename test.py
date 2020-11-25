@@ -6,18 +6,11 @@ for i in range(5):
     os.system("curl http://192.168.0.102/ > test.txt")
     f = open("test.txt",'r')
     d = open("water1","a")
-    o = open("without.txt","w")
-    
-    
-    
+    o = open("without.txt","w")    
     #markdown = open("test.md",'w')
-       
-    line1=f.read()
-    
-    
-    
+    line1=f.read()    
     value1=line1.replace("water content is",str(i))
-    
+    #tuikasitayatu
     value1=value1.split("%")[0]
     
     #value1=value1.replace("%",".0")
@@ -50,6 +43,7 @@ for i in range(5):
     c = open("kasoku.txt","w")
     speed1=f.read()
     speed1=speed1.split("%")[1]
+    c.write(speed1)
     c.close()
         
     
