@@ -1,4 +1,4 @@
 set terminal png
-plot "data2.txt" w l
+plot "water2" w l
 set output "data2.png"
 replot

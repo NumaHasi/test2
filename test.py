@@ -9,10 +9,9 @@ for i in range(60):
         with open("data.txt","r")as f:
             line = f.readline()
             x = x+1
-            if x > 1:
+            if x !=1:
                 o.write(line)
         o.close()
-        f.close()
         
         os.system("cp without.txt data.txt")
         
