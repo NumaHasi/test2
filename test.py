@@ -1,7 +1,7 @@
 import os
 import time
 
-for i in range(5):
+for i in range(60):
         
     os.system("curl http://192.168.0.100/ > test.txt")
     f = open("test.txt",'r')
