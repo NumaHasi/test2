@@ -2,7 +2,40 @@ import os
 import time
 
 
-for i in range(2):
+for i in range(60):
+    if i > 5:
+        x = 0
+        o = open ("without.txt","w")
+        with open("data.txt","r")as f:
+            line = f.readline()
+            x = x+1
+            if x != 0:
+                o.write(line)
+        o.close()
+        
+        os.system("cp without.txt data.txt")
+        
+        x = 0
+        o = open ("without2.txt","w")
+        with open("data2.txt","r")as f:
+            line = f.readline()
+            x = x+1
+            if x != 0:
+                o.write(line)
+        o.close()
+        
+        os.system("cp withou2.txt data2.txt")
+        
+        x = 0
+        o = open ("without3.txt","w")
+        with open("data3.txt","r")as f:
+            line = f.readline()
+            x = x+1
+            if x != 0:
+                o.write(line)
+        o.close()
+        
+        os.system("cp without3.txt data3.txt")
         
     os.system("curl http://192.168.0.100/ > test.txt")
     f = open("test.txt",'r')
@@ -61,3 +94,5 @@ for i in range(2):
     os.system("gnuplot getGraph3.gp")
     
     time.sleep(60)
+    
+open("test.txt","w").close
