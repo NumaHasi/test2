@@ -140,13 +140,15 @@ for i in range(5):
     
 
     
-    os.system("git add .")
 
-    os.system("git commit -m {}")
-
-    os.system("git push")
     
     os.system("gnuplot getGragh.gp")
     os.system("gnuplot getGragh2.gp")
     os.system("gnuplot getGragh3.gp")
+    
+    os.system("git add .")
+
+    os.system("git commit -m {}")
+
+    os.system("git push")    
     time.sleep(6)
