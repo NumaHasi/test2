@@ -37,6 +37,11 @@ for i in range(5):
         o.close()
         
         os.system("cp without.txt data.txt")
+        
+        
+        
+        
+        
     
     
 
@@ -54,6 +59,20 @@ for i in range(5):
     #markdown.close()
     f.close()
     d.close()
+    
+    if i>2:
+        
+        x=0
+        with open("data2.txt") as f:
+            x=x+1
+            line=f.readline()
+            if x !=1:
+                o.write(line)
+        o.close()
+        
+        os.system("cp without2.txt data2.txt")
+    
+    
 
 
 
