@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-water content is 118% 
- acc X:2476 Y:-2460 Z:16020
-=======
->>>>>>> 6ad6f06fed6cd5699e8d7a91584fb67fc4c7f009
+water content is 742% 
+ acc X:-2388 Y:4000 Z:15524
