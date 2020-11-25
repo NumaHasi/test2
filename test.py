@@ -1,7 +1,7 @@
 import os
 import time
 
-for i in range(2):
+for i in range(4):
         
     os.system("curl http://192.168.0.100/ > test.txt")
     f = open("test.txt",'r')
@@ -26,17 +26,17 @@ for i in range(2):
     #markdown.close()
     f.close()
     d.close()
-    
-    x=0
-    
-    with open("data.txt") as f:
-        x=x+1
-        line=f.readline()
-        if x !=1:
-            o.write(line)
-    o.close()
-    
-    os.system("cp without.txt data.txt")
+    if i<2:
+        
+        x=0
+        with open("data.txt") as f:
+            x=x+1
+            line=f.readline()
+            if x !=1:
+                o.write(line)
+        o.close()
+        
+        os.system("cp without.txt data.txt")
     
     
 
