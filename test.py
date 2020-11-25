@@ -13,7 +13,7 @@ for i in range(2):
     
     line1=f.read()
     value1=line1.replace("water content is",str(i))
-    value1=value1.replace("%","")
+    value1=value1.replace("%",".0")
     d.write(value1+"\n")
     
   
