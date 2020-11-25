@@ -85,7 +85,25 @@ for i in range(5):
     
     line3=f.read()
     value3=line3.replace("water content is",str(i))
+    
+    
+
+    
+    #value3=value3.removeprefix('%',str(i))
+    value3=value3.split("%")[0]
+
     value3=value3.replace("%","")
+    
+#     import re
+#     r=re.compile("(.*)(acc)(.*)")
+#     m=r.match(value3)
+#     print m.group(1)
+    
+    
+    
+    
+    
+    
     d.write(value3+"\n")
 
     #markdown.write(value)
