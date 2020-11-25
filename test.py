@@ -12,13 +12,8 @@ for i in range(2):
     line1=f.read()
     value1=line1.replace("water content is",str(i))
     value1=value1.replace("%","")
-    d.write(value1)
+    d.write(value1+"\n")
     
-    #gnuplot "test.gn"
-    #plot 'data.txt'
-    #set terminal png
-    #replot
-    #set output "data.png"
     
     markdown.write(f.read())
     
