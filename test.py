@@ -89,8 +89,10 @@ for i in range(5):
     
 
     
-    #value3=value3.removeprefix('%',str(i))
-    value3=value3.split("%")[0]
+    #value3=value3.removeprefix('%',str(i)   sippai
+    
+    
+    #value3=value3.split("%")[0]
 
     value3=value3.replace("%","")
     
