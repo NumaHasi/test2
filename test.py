@@ -47,7 +47,7 @@ for i in range(5):
 
     os.system("curl http://192.168.0.101/ > test2.txt")
     f = open("test2.txt",'r')
-    d = open("data2.txt",'a')
+    d = open("water2",'a')
     markdown = open("test2.md",'w')
     
     line2=f.read()
@@ -63,14 +63,14 @@ for i in range(5):
     if i>2:
         
         x=0
-        with open("data2.txt") as f:
+        with open("water2") as f:
             x=x+1
             line=f.readline()
             if x !=1:
                 o.write(line)
         o.close()
         
-        os.system("cp without2.txt data2.txt")
+        os.system("cp without2.txt water2")
     
     
 
@@ -79,7 +79,7 @@ for i in range(5):
 
     os.system("curl http://192.168.0.103/ > test3.txt")
     f = open("test3.txt",'r')
-    d = open("data3.txt",'a')
+    d = open("water3",'a')
     #markdown = open("test3.md",'a')
     
     line3=f.read()
@@ -91,6 +91,21 @@ for i in range(5):
     #markdown.close()
     f.close()
     d.close()
+    
+    if i>2:
+        
+        x=0
+        with open("water3") as f:
+            x=x+1
+            line=f.readline()
+            if x !=1:
+                o.write(line)
+        o.close()
+        
+        os.system("cp without2.txt water3")
+    
+    
+
     
     os.system("git add .")
 
