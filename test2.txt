@@ -1,1 +1,0 @@
-water content is 0%

@@ -6,6 +6,8 @@ for i in range(2):
     os.system("curl http://192.168.0.100/ > test.txt")
     f = open("test.txt",'r')
     d = open("data.txt","a")
+    o = open("without.txt","w")
+    
     #markdown = open("test.md",'w')
     
     
@@ -13,6 +15,11 @@ for i in range(2):
     value1=line1.replace("water content is",str(i))
     value1=value1.replace("%","")
     d.write(value1+"\n")
+    
+  
+        
+        
+    
 
     #markdown.write(value)
     
@@ -20,7 +27,16 @@ for i in range(2):
     f.close()
     d.close()
     
+    x=0
     
+    with open("data.txt") as f:
+        x=x+1
+        line=f.readline()
+        if x !=1:
+            o.write(line)
+    o.close()
+    
+    os.system("cp without.txt data.txt")
     
     
 
