@@ -7,11 +7,13 @@ for i in range(10):
     f = open("test.txt",'r')
     d = open("data.txt","w")
     markdown = open("test.md",'w')
+    
     line=f.read()
     value=line.replace("water content is",str(i))
     value=value.replace("%","")
     d.write(value)
     markdown.write(value)
+    
     markdown.close()
     f.close()
     d.close()
