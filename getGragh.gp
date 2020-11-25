@@ -1,5 +1,5 @@
 set terminal png
 plot "water1" w l
-set autoscale [Enter]
+set autoscale 
 set output "data.png"
 replot
