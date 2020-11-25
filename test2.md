@@ -1,1 +1,1 @@
-water content is 144%
+water content is 0%
