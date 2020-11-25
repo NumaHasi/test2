@@ -1,6 +1,6 @@
 import os
 
-os.system("curl https://researchmap.jp/read0088195 > test.txt")
+os.system("curl http://192.168.0.234/ > test.txt")
 f = open("test.txt",'r')
 markdown = open("test.md",'w')
 
