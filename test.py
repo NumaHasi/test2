@@ -6,7 +6,7 @@ for i in range(60):
     if i > 3:
         x = 0
         o = open ("without.txt","w")
-        with open("data.txt","r")as f:
+        with open("water1","r")as f:
             line = f.readline()
             x = x+1
             if x !=1:
@@ -17,7 +17,7 @@ for i in range(60):
         
         x = 0
         o = open ("without2.txt","w")
-        with open("data2.txt","r")as f:
+        with open("water2","r")as f:
             line = f.readline()
             x = x+1
             if x != 1:
@@ -28,7 +28,7 @@ for i in range(60):
         
         x = 0
         o = open ("without3.txt","w")
-        with open("data3.txt","r")as f:
+        with open("water3","r")as f:
             line = f.readline()
             x = x+1
             if x != 1:
