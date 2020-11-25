@@ -155,4 +155,4 @@ for i in range(5):
     os.system("git commit -m {}")
 
     os.system("git push")    
-    time.sleep(6)
+    time.sleep(2)
