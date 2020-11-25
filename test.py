@@ -40,20 +40,21 @@ for i in range(5):
  
     #kokogayaritai
     
-    x=value1
+    x=value1.replace("0 ","")
     
     
-#     k=open("withoutX.txt","w")
-#     
+    k=open("withoutX.txt","w")
+    print(x)
 # 
-#     if int(x) < 1792.8:
-#         with open("withoutX") as f:
-#             
-#         x=x/224.1
-#         
-#         k.write(x)
-#         
-#         k.close()        
+    if int(x) < 1792.8:
+        
+#
+             
+#         x=str(float(x)/224.1)
+         
+        k.write(x)
+         
+        k.close()        
      
          
        
