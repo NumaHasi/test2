@@ -5,7 +5,7 @@ for i in range(10):
         
     os.system("curl http://192.168.0.100/ > test.txt")
     f = open("test.txt",'r')
-    d = open("data.tet","w")
+    d = open("data.txt","w")
     markdown = open("test.md",'w')
     line=f.read()
     value=line.replace("water content is",str(i))

@@ -1,1 +1,1 @@
-water content is 587%
+water content is 218%
