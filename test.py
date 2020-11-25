@@ -8,6 +8,10 @@ for i in range(5):
     d = open("water1","a")
     o = open("without.txt","w")
     
+    c = open("rapid","w")
+    speed1=f.read()
+    speed1=speed1.split("%")[1]
+    
     #markdown = open("test.md",'w')
     
     
@@ -16,7 +20,7 @@ for i in range(5):
     
     value1=value1.split("%")[0]
     
-    value1=value1.replace("%",".0")
+    #value1=value1.replace("%",".0")
     d.write(value1+"\n")
     
   
