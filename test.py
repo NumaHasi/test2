@@ -46,11 +46,10 @@ for i in range(5):
     k=open("withoutX.txt","w")
     print(x)
 # 
-    if int(x) < 1792.8:
+    if float(x) < 1792.8:
         
 #
-             
-#         x=str(float(x)/224.1)
+        x=str(float(x)/224.1)
          
         k.write(x)
          
