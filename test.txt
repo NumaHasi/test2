@@ -1,2 +1,2 @@
-water content is 611% 
- acc X:660 Y:456 Z:16256
+water content is 21% 
+ acc X:660 Y:520 Z:16264
