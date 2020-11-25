@@ -47,10 +47,9 @@ for i in range(5):
     #s=open("without-kasoku.txt","w")
     
     #s.write
-    
-#     speed1=speed1.split("%")[1]
-#     c.write(speed1)
-#     c.close()
+    speed1=speed1.split("%")[1]
+    c.write(speed1)
+    c.close()
     
 #       with open("test.txt") as f:
 #           next(f)
