@@ -63,9 +63,9 @@ for i in range(2):
 
     os.system("git push")
     
-    os.system("gnuplot getGraph.gp")
-    os.system("gnuplot getGraph2.gp")
-    os.system("gnuplot getGraph3.gp")
+    os.system("gnuplot getGragh.gp")
+    os.system("gnuplot getGragh2.gp")
+    os.system("gnuplot getGragh3.gp")
     time.sleep(60)
     
         
