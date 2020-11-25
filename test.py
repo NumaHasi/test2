@@ -5,7 +5,7 @@ for i in range(5):
         
     os.system("curl http://192.168.0.100/ > test.txt")
     f = open("test.txt",'r')
-    d = open("data.txt","a")
+    d = open("water1","a")
     o = open("without.txt","w")
     
     #markdown = open("test.md",'w')
@@ -29,14 +29,14 @@ for i in range(5):
     if i>2:
         
         x=0
-        with open("data.txt") as f:
+        with open("water1") as f:
             x=x+1
             line=f.readline()
             if x !=1:
                 o.write(line)
         o.close()
         
-        os.system("cp without.txt data.txt")
+        os.system("cp without.txt water")
         
         
         
