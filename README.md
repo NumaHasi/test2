@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-### NumaHasi
+### Team Kazehaya
 
 
 

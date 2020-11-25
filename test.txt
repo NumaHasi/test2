@@ -1,2 +1,0 @@
-water content is 224.1% 
- acc X:652 Y:772Z:16324

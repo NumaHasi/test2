@@ -41,8 +41,10 @@ for i in range(5):
     #kokogayaritai
     
     x=value1
-    if int(x) < 1792.8:
-        x=x/224.1
+    
+    
+#     if int(x) < 1792.8:
+#         x=x/224.1
         
      
          
