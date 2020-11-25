@@ -43,9 +43,17 @@ for i in range(5):
     x=value1
     
     
+#     k=open("withoutX.txt","w")
+#     
+# 
 #     if int(x) < 1792.8:
+#         with open("withoutX") as f:
+#             
 #         x=x/224.1
-        
+#         
+#         k.write(x)
+#         
+#         k.close()        
      
          
        
@@ -53,17 +61,12 @@ for i in range(5):
         
     #value1=value1.replace("%",".0")
     d.write(x+"\n")
-    
-    
-    
-  
 
     #markdown.write(value)
     
     #markdown.close()
     f.close()
-    d.close()
-    
+    d.close() 
     
 #     if i>5:
 #         
