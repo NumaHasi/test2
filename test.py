@@ -55,4 +55,5 @@ for i in range(2):
 
     os.system("git push")
     
+    os.system("gnuplot getGraph.gp")
     time.sleep(60)
