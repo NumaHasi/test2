@@ -1,17 +1,23 @@
 import os
 import time
 
-for i in range(1):
+for i in range(2):
         
-    os.system("curl http://192.168.0.100/ > test.txt")
+    os.system("curl http://192.168.0.101/ > test.txt")
     f = open("test.txt",'r')
-    d = open("data.txt","w")
+    d = open("data.txt","a")
     markdown = open("test.md",'w')
     
     line=f.read()
     value=line.replace("water content is",str(i))
     value=value.replace("%","")
     d.write(value)
+    
+    #gnuplot
+    #set terminal png
+    #replot
+    #set output "data.png"
+    
     markdown.write(value)
     
     markdown.close()
