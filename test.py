@@ -60,12 +60,13 @@ for i in range(5):
     os.system("curl http://192.168.0.101/ > test2.txt")
     f = open("test2.txt",'r')
     d = open("water2",'a')
-    markdown = open("test2.md",'w')
+    
+    o = open("without2.txt","w") 
+    #markdown = open("test2.md",'w')
     
     line2=f.read()
     value2=line2.replace("water content is",str(i))
-    value2=value2.replace("%","")
-    
+    value2=value2.split("%")[0]    
     d.write(value2+"\n")
 
     #markdown.write(value)
@@ -94,6 +95,7 @@ for i in range(5):
     f = open("test3.txt",'r')
     d = open("water3",'a')
     #markdown = open("test3.md",'a')
+    o = open("without3.txt","w")
     
     line3=f.read()
     value3=line3.replace("water content is",str(i))
@@ -106,7 +108,7 @@ for i in range(5):
     
     #value3=value3.split("%")[0]
 
-    value3=value3.replace("%","")
+    value1=value1.split("%")[0]
     
 #     import re
 #     r=re.compile("(.*)(acc)(.*)")
