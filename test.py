@@ -9,7 +9,7 @@ for i in range(60):
         with open("data.txt","r")as f:
             line = f.readline()
             x = x+1
-            if x != 0:
+            if x != 1:
                 o.write(line)
         o.close()
         
@@ -20,7 +20,7 @@ for i in range(60):
         with open("data2.txt","r")as f:
             line = f.readline()
             x = x+1
-            if x != 0:
+            if x != 1:
                 o.write(line)
         o.close()
         
@@ -31,7 +31,7 @@ for i in range(60):
         with open("data3.txt","r")as f:
             line = f.readline()
             x = x+1
-            if x != 0:
+            if x != 1:
                 o.write(line)
         o.close()
         
@@ -43,8 +43,8 @@ for i in range(60):
     #markdown = open("test.md",'w')
     
     line1=f.read()
-    value1=line1.replace("water content is",str(i))
-    value1=value1.replace("%","")
+    value1=line1.replace("water content is",str(i)+str(.0))
+    value1=value1.replace("%",".0")
     d.write(value1+"\n")
     
     
@@ -59,8 +59,8 @@ for i in range(60):
     #markdown = open("test2.md",'w')
     
     line2=f.read()
-    value2=line2.replace("water content is",str(i))
-    value2=value2.replace("%","")
+    value2=line2.replace("water content is",str(i)+str(.0))
+    value2=value2.replace("%",".0")
     d.write(value2+"\n")
 
     #markdown.write(f.read())
@@ -74,8 +74,8 @@ for i in range(60):
     #markdown = open("test3.md",'w')
 
     line3=f.read()
-    value3=line3.replace("water content is",str(i))
-    value3=value3.replace("%","")
+    value3=line3.replace("water content is",str(i)+str(.0))
+    value3=value3.replace("%",".0")
     d.write(value3+"\n")
 
     #markdown.write(f.read())
