@@ -36,7 +36,7 @@ for i in range(5):
                 o.write(line)
         o.close()
         
-        os.system("cp without.txt water")
+        os.system("cp without.txt water1")
         
         
         
