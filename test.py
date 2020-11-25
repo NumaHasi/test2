@@ -36,7 +36,7 @@ for i in range(2):
     value2=value2.replace("%","")
     d.write(value2)
 
-    markdown.write(value2)
+    markdown.write(f.read())
     markdown.close()
     f.close()
     d.close()
