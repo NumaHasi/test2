@@ -1,7 +1,7 @@
 import os
 import time
 
-for i in range(4):
+for i in range(5):
         
     os.system("curl http://192.168.0.100/ > test.txt")
     f = open("test.txt",'r')
@@ -26,7 +26,7 @@ for i in range(4):
     #markdown.close()
     f.close()
     d.close()
-    if i<2:
+    if i>2:
         
         x=0
         with open("data.txt") as f:
