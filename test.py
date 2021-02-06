@@ -8,7 +8,7 @@ for i in range(5):
 #     kokowokaeta2/6
 
         
-# os.system("curl http://192.168.0.102/ > test.txt")
+    os.system("curl http://192.168.0.102/ > test.txt")
 
 
 #     kokowokaeta2/6
@@ -37,15 +37,15 @@ for i in range(5):
          
         x=str(float(x)/224.1)
         print(x)
-        if float(x) <2353.2:
-            x=str(float(x)/70.1-1231.6)
-            print(x)
-            if float(x) <2508.8:
-                x=str(float(x)/19.5-2040.8)
-                print(x)
-                if float(x) >2509.55:
-                    x=str(float(x)/1.4-2476.7)
-                    print(x)
+    elif float(x) <2353.2:
+        x=str(float(x)/70.1-1231.6)
+        print(x)
+    elif float(x) <2508.8:
+        x=str(float(x)/19.5-2040.8)
+        print(x)
+    elif float(x) >2509.55:
+        x=str(float(x)/1.4-2476.7)
+        print(x)
          
         
 #kokomadeyattekuretayatu
