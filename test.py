@@ -45,7 +45,7 @@ for i in range(5):
 #     elif float(x) >2509.55:
 #          x=str(float(x)/1.4-2476.7)
 #          print(x)
-#          
+#  ###########################        
         
 #kokomadeyattekuretayatu
          
