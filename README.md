@@ -1,4 +1,4 @@
-## KAZEHAYADESU!
+## 俺たちの土壌水分センサー
 
 ### Team Kazehaya
 
