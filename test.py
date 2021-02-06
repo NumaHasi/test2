@@ -1,7 +1,7 @@
 import os
 import time
 
-for i in range(5):
+for i in range(10):
     
     #max hatarakikaisuu
     
@@ -188,4 +188,4 @@ for i in range(5):
     os.system("git commit -m {}")
 
     os.system("git push")    
-    time.sleep(2)
+    time.sleep(5)
