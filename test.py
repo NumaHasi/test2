@@ -45,12 +45,19 @@ for i in range(5):
     
 #     k=open("withoutX.txt","w")
 #     print(x)
-# 
+
+
+#sennseigayattekuretayatu
+
+ 
     if float(x) < 1792.8:
-        
-#
+         
         x=str(float(x)/224.1)
         print(x)
+         
+        
+#kokomadeyattekuretayatu
+        
         
 #         if else:
 #             x=str(x)
