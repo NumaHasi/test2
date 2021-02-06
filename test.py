@@ -44,8 +44,12 @@ for i in range(5):
        
     #2/4 kokomade
     
+    y=str("0 ")
+    print(y)
+    print(i)
 
-    x=str(float("0 ")+float(x))
+    x=(y+x)
+#     x="x"+"y"
     print(x)
     
 #value1=value1.replace("%",".0")
