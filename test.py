@@ -7,7 +7,7 @@ for i in range(5):
     
 #     kokowokaeta2/6
 
-    os.system("curl http://192.168.0.102/ > test.txt")
+#    os.system("curl http://192.168.0.102/ > test.txt")
 
 
 #     kokowokaeta2/6
@@ -31,6 +31,7 @@ for i in range(5):
 
 #sennseigayattekuretayatu
 
+#itijitekihajikesita
 
 #     if float(x) < 1792.8:     
 #          x=str(float(x)/224.1)
