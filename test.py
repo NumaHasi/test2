@@ -47,7 +47,9 @@ for i in range(5):
     y=str("0 ")
     print(y)
     print(i)
-
+    
+    z=(str(i)+" ")
+    
     x=(y+x)
 #     x="x"+"y"
     print(x)
