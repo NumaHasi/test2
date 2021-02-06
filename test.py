@@ -50,6 +50,7 @@ for i in range(5):
         
 #
         x=str(float(x)/224.1)
+        print(x)
         
 #         if else:
 #             x=str(x)
@@ -61,6 +62,9 @@ for i in range(5):
          
        
     #2/4 kokomade
+
+#     x=insert( 0,x)
+    
         
     #value1=value1.replace("%",".0")
     d.write(x+"\n")
