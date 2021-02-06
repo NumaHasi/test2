@@ -59,8 +59,9 @@ for i in range(10):
     #markdown.write(value)
     
     #markdown.close()
+    d.close()
     f.close()
-    d.close() 
+ 
     
 #     if i>5:
 #         
