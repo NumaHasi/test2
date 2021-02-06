@@ -4,8 +4,16 @@ import time
 for i in range(5):
     
     #max hatarakikaisuu
+    
+#     kokowokaeta2/6
+
         
 # os.system("curl http://192.168.0.102/ > test.txt")
+
+
+#     kokowokaeta2/6
+
+
     f = open("test.txt",'r')
     d = open("water1","a")
     o = open("without.txt","w")
@@ -35,8 +43,11 @@ for i in range(5):
          
        
     #2/4 kokomade
+    
 
-#     x=insert( 0,x)  
+    x=str(0+float(x))
+    print(x)
+    
 #value1=value1.replace("%",".0")
 
     d.write(x+"\n")
