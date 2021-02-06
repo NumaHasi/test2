@@ -37,6 +37,15 @@ for i in range(5):
          
         x=str(float(x)/224.1)
         print(x)
+        if float(x) <2353.2:
+            x=str(float(x)/70.1-1231.6)
+            print(x)
+            if float(x) <2508.8:
+                x=str(float(x)/19.5-2040.8)
+                print(x)
+                if float(x) >2509.55:
+                    x=str(float(x)/1.4-2476.7)
+                    print(x)
          
         
 #kokomadeyattekuretayatu
@@ -44,13 +53,15 @@ for i in range(5):
        
     #2/4 kokomade
     
-    y=str("0 ")
-    print(y)
+#     y=str("0 ")
+#     print(y)
     print(i)
     
     z=(str(i)+" ")
     
-    x=(y+x)
+    x=(z+x)
+    
+#     x=(y+x)
 #     x="x"+"y"
     print(x)
     
