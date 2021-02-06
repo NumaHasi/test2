@@ -27,18 +27,18 @@ for i in range(5):
     f.close()
     d.close()
     
-    if i>2:
-        
-        x=0
-        with open("water1") as f:
-            x=x+1
-            line=f.readline()
-            if x !=1:
-                o.write(line)
-        o.close()
-        
-        os.system("cp without.txt water1")
-        
+#     if i>2:
+#         
+#         x=0
+#         with open("water1") as f:
+#             x=x+1
+#             line=f.readline()
+#             if x !=1:
+#                 o.write(line)
+#         o.close()
+#         
+#         os.system("cp without.txt water1")
+#         
         
     f = open("test.txt",'r')
     c = open("kasoku.txt","w")
@@ -47,11 +47,14 @@ for i in range(5):
     #s=open("without-kasoku.txt","w")
     
     #s.write
-    speed1=speed1.split("%")[1]
-    c.write(speed1)
-    c.close()
     
-#       with open("test.txt") as f:
+    
+    
+#     speed1=speed1.split("%")[1]
+#     c.write(speed1)
+#     c.close()
+#     
+# #       with open("test.txt") as f:
 #           next(f)
 #           for line in f :
 #               print(line.strip("\n"))
