@@ -13,39 +13,14 @@ for i in range(5):
     line1=f.read()
     value1=line1.replace("water content is",str(i))
     
-
-        
-    
-    
-    
     #tuikasitayatu
     value1=value1.split("%")[0]
-    
-        #2/4 tuika
-    #sankou atodekesu
-#     if i>5:
-#         
-#         x=0
-#         with open("water1") as f:
-#             x=x+1
-#             line=f.readline()
-#             if x !=1:
-#                 o.write(line)
-#         o.close()
-#         
-#         os.system("cp without.txt water1")
-#         
-
-    
- 
-    #kokogayaritai
-    
+      
     x=value1.replace("0 ","")
     
     
 #     k=open("withoutX.txt","w")
 #     print(x)
-
 
 #sennseigayattekuretayatu
 
@@ -57,23 +32,13 @@ for i in range(5):
          
         
 #kokomadeyattekuretayatu
-        
-        
-#         if else:
-#             x=str(x)
-         
-#         k.write(x)
-#          
-#         k.close()        
-#      
          
        
     #2/4 kokomade
 
-#     x=insert( 0,x)
-    
-        
-    #value1=value1.replace("%",".0")
+#     x=insert( 0,x)  
+#value1=value1.replace("%",".0")
+
     d.write(x+"\n")
 
     #markdown.write(value)
