@@ -1,4 +1,4 @@
-## KAZEHAYADESU!
+## 風早です！！
 
 ### Team Kazehaya
 
